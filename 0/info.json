@@ -1,0 +1,25 @@
+{
+  "created": 1754172567531,
+  "description": "",
+  "id": "0",
+  "modified": 1755746110292,
+  "owner": "SunshineLuke",
+  "tags": [],
+  "thumbnail": null,
+  "title": "CamViewerTesting",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Published",
+    "version:1.18.0",
+    "publishVersion:1.18.0"
+  ],
+  "portalUrl": "https://sunshinegis.maps.arcgis.com",
+  "username": "SunshineLuke",
+  "name": "CamViewerTesting",
+  "isLocalApp": true,
+  "url": null
+}

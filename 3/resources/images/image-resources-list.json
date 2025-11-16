@@ -1,0 +1,15 @@
+{
+  "1760935120333": {
+    "originalName": "web-app-manifest-512x512.png",
+    "fileName": "1760935120333.png",
+    "size": 61529,
+    "url": "${appResourceUrl}/images/widget_3/1760935120333.png",
+    "created": 1760935120333,
+    "resourcesPrefix": "images/widget_3",
+    "referredIds": [],
+    "originId": "1760935120333",
+    "fileFormat": "image/png",
+    "originalWidth": 512,
+    "originalHeight": 512
+  }
+}
