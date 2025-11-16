@@ -8,21 +8,22 @@ trigger:
     exclude:
       - 1
       - 2
+      - 3
       - azure-pipelines.yml
       - README.md
   
 
 pool:
-  name: 'MO-GIS-Build-Agent (SDWMBLD4961)' 
+  vmImage: 'windows-latest'
 
 resources:
   repositories:
     - repository: widgets
       type: git
-      name: SEMA EB4Dev/widgets
+      name: EB4Dev/widgets
     - repository: apps
       type: git
-      name: SEMA EB4Dev/apps
+      name: EB4Dev/apps
 
 jobs:
 
@@ -107,7 +108,7 @@ jobs:
       Contents: 'exb\app.zip'
 
   - powershell: |
-      node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('0', 'app.zip', 'cCEo2RSftKlv57I6')
+      node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('0', 'app.zip', 'WeW1dajKocDIqUdq')
         .then(() => { 
           console.log('--- SCRIPT COMPLETED SUCCESSFULLY ---'); 
           process.exit(0); 
