@@ -38,7 +38,7 @@ jobs:
 
   - powershell: |
       # Use PowerShell's Invoke-RestMethod and Invoke-WebRequest to download the file.
-      $jsonResponse = Invoke-RestMethod -Uri 'https://downloads.arcgis.com/dms/rest/download/secured/arcgis-experience-builder-1.18.zip?f=json&folder=software%2FExperienceBuilder%2F1.18'
+      $jsonResponse = Invoke-RestMethod -Uri 'https://downloads.arcgis.com/dms/rest/download/secured/arcgis-experience-builder-1.19.zip?f=json&folder=software%2FExperienceBuilder%2F1.19'
       Invoke-WebRequest -Uri $jsonResponse.url -OutFile exb.zip
     displayName: 'Download Experience Builder'
 
