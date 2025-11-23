@@ -390,23 +390,18 @@
       "label": "Default"
     }
   },
-  "exbVersion": "1.18.0",
+  "exbVersion": "1.19.0",
   "mainSizeMode": "LARGE",
-  "theme": "themes/shared-theme/",
+  "theme": "themes/astro/",
   "forBuilderAttributes": {
     "lockLayout": false,
-    "viewPortSize": {
-      "LARGE": {
-        "width": 1024,
-        "height": 768
-      }
-    }
+    "viewPortSize": {}
   },
   "template": "blankfullscreen",
   "widgets": {
     "widget_2": {
       "uri": "widgets/layout/flowrow/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Flow Row",
       "config": {
         "space": 10,
@@ -430,7 +425,7 @@
     },
     "widget_3": {
       "uri": "widgets/common/image/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Image",
       "config": {
         "functionConfig": {
@@ -471,7 +466,7 @@
     },
     "widget_4": {
       "uri": "widgets/common/text/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Text",
       "config": {
         "text": "<p><span style=\"font-size: 30px;\">﻿Experience Builder Homepage</span></p>",
@@ -484,7 +479,7 @@
     },
     "widget_5": {
       "uri": "widgets/layout/flowrow/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Flow Row 2",
       "config": {
         "space": 10,
@@ -508,7 +503,7 @@
     },
     "widget_7": {
       "uri": "widgets/common/share/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "offPanel": true,
       "label": "Share",
       "config": {
@@ -589,7 +584,7 @@
             "btnColor": "",
             "iconColor": "white",
             "size": "default",
-            "labelColor": "var(--light)"
+            "labelColor": "var(--sys-color-surface-paper-text)"
           }
         }
       },
@@ -603,7 +598,7 @@
     },
     "widget_8": {
       "uri": "widgets/layout/column/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Column",
       "config": {
         "space": 10,
@@ -627,7 +622,7 @@
     },
     "widget_9": {
       "uri": "widgets/layout/row/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Row",
       "config": {
         "space": 10,
@@ -649,7 +644,7 @@
     },
     "widget_10": {
       "uri": "widgets/common/card/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Card",
       "config": {
         "DEFAULT": {
@@ -657,11 +652,11 @@
           "backgroundStyle": {
             "border": {
               "type": "solid",
-              "color": "var(--light-400)",
+              "color": "var(--sys-color-divider-secondary)",
               "width": "1px"
             },
             "background": {
-              "color": "var(--dark)",
+              "color": "",
               "fillType": "fit",
               "image": {
                 "url": ""
@@ -683,7 +678,7 @@
           "backgroundStyle": {
             "border": {
               "type": "solid",
-              "color": "var(--light-400)",
+              "color": "var(--sys-color-divider-secondary)",
               "width": "1px"
             },
             "boxShadow": {
@@ -724,35 +719,35 @@
     },
     "widget_63": {
       "uri": "widgets/common/text/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Text 2",
       "config": {
         "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿Radar Test</span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true,
-          "color": "var(--light)"
+          "color": ""
         }
       },
       "id": "widget_63"
     },
     "widget_64": {
       "uri": "widgets/common/text/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Text 3",
       "config": {
         "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up to provide a high refresh rate, low latency radar viewer, within an Experience Builder application.</span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true,
-          "color": "var(--light)"
+          "color": ""
         }
       },
       "id": "widget_64"
     },
     "widget_65": {
       "uri": "widgets/common/image/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Image 2",
       "config": {
         "functionConfig": {
@@ -777,7 +772,7 @@
     },
     "widget_67": {
       "uri": "widgets/common/button/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Button 2",
       "config": {
         "functionConfig": {
@@ -800,7 +795,7 @@
           "customStyle": {
             "regular": {
               "iconProps": {
-                "color": "var(--white)",
+                "color": "",
                 "size": 14
               }
             },
@@ -816,20 +811,20 @@
     },
     "widget_68": {
       "uri": "widgets/common/text/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Text 4",
       "config": {
         "text": "<h2 style=\"text-align: center;\"><span style=\"color: var(--light);\">This is the root directory for EB apps.</span></h2><p style=\"text-align: center;\"><span style=\"color: var(--light);\">Likely, you actually want to go to one of the apps below. Just go ahead and click \"Open\" on one of the apps to really dive into what's going on.</span></p>",
         "style": {
           "wrap": true,
-          "color": "var(--light)"
+          "color": ""
         }
       },
       "id": "widget_68"
     },
     "widget_69": {
       "uri": "widgets/common/divider/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Divider",
       "config": {
         "direction": "Horizontal",
@@ -854,13 +849,13 @@
     },
     "widget_70": {
       "uri": "widgets/common/divider/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Divider 2",
       "config": {
         "direction": "Horizontal",
         "strokeStyle": {
           "type": "Style0",
-          "color": "var(--light)",
+          "color": "",
           "size": "3px"
         },
         "pointStart": {
@@ -896,7 +891,7 @@
       }
     }
   },
-  "timestamp": 1760936056412,
+  "timestamp": 1763929896502,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -932,5 +927,98 @@
     }
   },
   "customTheme": {},
-  "publishTimestamp": 1760936057429
+  "customThemeOptions": {
+    "sys": {
+      "typography": {
+        "h1": {
+          "fontFamily": "Noto Sans"
+        },
+        "h2": {
+          "fontFamily": "Noto Sans"
+        },
+        "h3": {
+          "fontFamily": "Noto Sans"
+        },
+        "h4": {
+          "fontFamily": "Noto Sans"
+        },
+        "h5": {
+          "fontFamily": "Noto Sans"
+        },
+        "h6": {
+          "fontFamily": "Noto Sans"
+        },
+        "title1": {
+          "fontFamily": "Noto Sans"
+        },
+        "title2": {
+          "fontFamily": "Noto Sans"
+        },
+        "title3": {
+          "fontFamily": "Noto Sans"
+        },
+        "inputField": {
+          "fontFamily": "Noto Sans"
+        },
+        "body": {
+          "fontFamily": "Noto Sans"
+        },
+        "label1": {
+          "fontFamily": "Noto Sans"
+        },
+        "label2": {
+          "fontFamily": "Noto Sans"
+        },
+        "label3": {
+          "fontFamily": "Noto Sans"
+        }
+      },
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      },
+      "color": {
+        "mode": "dark",
+        "dark": {
+          "primary": {
+            "main": "#9225a0"
+          },
+          "secondary": {
+            "main": "#92a8d1"
+          }
+        }
+      }
+    },
+    "ref": {
+      "typeface": {
+        "customFonts": [
+          {
+            "name": "Noto Sans",
+            "url": "https://fonts.googleapis.com/css2?family=Noto+Sans"
+          }
+        ]
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    },
+    "src": {
+      "primary": {
+        "color": "#9225a0",
+        "harmonize": true
+      },
+      "secondary": {
+        "color": "#92a8d1",
+        "harmonize": true
+      }
+    }
+  },
+  "publishTimestamp": 1763929897264
 }

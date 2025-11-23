@@ -2,7 +2,7 @@
   "created": 1754172567531,
   "description": "",
   "id": "0",
-  "modified": 1755746110292,
+  "modified": 1763929961873,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
@@ -14,10 +14,11 @@
     "Ready To Use",
     "JavaScript",
     "status: Published",
-    "version:1.18.0",
-    "publishVersion:1.18.0"
+    "version:1.19.0",
+    "publishVersion:1.19.0",
+    "modified: 1763929945529"
   ],
-  "portalUrl": "https://sunshinegis.maps.arcgis.com",
+  "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
   "name": "CamViewerTesting",
   "isLocalApp": true,

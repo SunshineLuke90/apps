@@ -2,7 +2,7 @@
   "created": 1760934974578,
   "description": "",
   "id": "3",
-  "modified": 1760936057433,
+  "modified": 1763929897269,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
@@ -14,11 +14,13 @@
     "Ready To Use",
     "JavaScript",
     "status: Published",
-    "version:1.18.0"
+    "version:1.19.0",
+    "modified: 1763929896552",
+    "publishVersion:1.18.0"
   ],
-  "portalUrl": "https://sunshinegis.maps.arcgis.com",
+  "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
-  "name": "Untitled experience 3",
+  "name": "Homepage",
   "isLocalApp": true,
   "clearEmptyFields": false,
   "url": null

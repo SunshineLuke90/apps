@@ -79,23 +79,18 @@
       ]
     }
   },
-  "exbVersion": "1.18.0",
+  "exbVersion": "1.19.0",
   "mainSizeMode": "LARGE",
-  "theme": "themes/morandi/",
+  "theme": "themes/astro/",
   "forBuilderAttributes": {
     "lockLayout": false,
-    "viewPortSize": {
-      "LARGE": {
-        "width": 1024,
-        "height": 768
-      }
-    }
+    "viewPortSize": {}
   },
   "template": "blankfullscreen",
   "widgets": {
     "widget_1": {
       "uri": "widgets/arcgis/arcgis-map/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Map",
       "config": {
         "toolConfig": {
@@ -204,8 +199,11 @@
       ],
       "style": {
         "background": {
-          "color": "var(--light-100)",
-          "fillType": "fill"
+          "color": "var(--ref-palette-neutral-1300)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
         },
         "borderRadius": {
           "number": [
@@ -218,7 +216,8 @@
         },
         "boxShadow": {
           "presetStyle": "shadow-lg"
-        }
+        },
+        "textColor": "var(--ref-palette-neutral-100)"
       }
     }
   },
@@ -230,7 +229,7 @@
   "attributes": {
     "portalUrl": "https://sunshinegis.maps.arcgis.com"
   },
-  "timestamp": 1757016317248,
+  "timestamp": 1763929348657,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -265,5 +264,33 @@
     }
   ],
   "customTheme": {},
-  "publishTimestamp": 1757016783537
+  "customThemeOptions": {
+    "sys": {
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      },
+      "color": {
+        "mode": "dark",
+        "dark": {
+          "action": {
+            "default": "#000000",
+            "hover": "#1b1b1b",
+            "text": "#ffffff"
+          }
+        }
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    }
+  },
+  "publishTimestamp": 1763929432801
 }

@@ -2,22 +2,25 @@
   "created": 1759364928376,
   "description": "",
   "id": "2",
-  "modified": 1759459911581,
+  "modified": 1763936109206,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
-  "title": "Untitled experience 2",
+  "title": "FIM tester",
   "type": "Web Experience",
   "snippet": "",
   "typeKeywords": [
     "EXB Experience",
     "Ready To Use",
     "JavaScript",
-    "status: Draft",
-    "version:1.18.0"
+    "status: Changed",
+    "version:1.19.0",
+    "modified: 1763936109204",
+    "publishVersion:1.19.0"
   ],
-  "portalUrl": "https://sunshinegis.maps.arcgis.com",
+  "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
-  "name": "Untitled experience 2",
-  "isLocalApp": true
+  "name": "FIM tester",
+  "isLocalApp": true,
+  "url": null
 }

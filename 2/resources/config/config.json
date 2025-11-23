@@ -47,25 +47,23 @@
     },
     "layout_1": {
       "content": {
-        "0": {
+        "1": {
           "type": "WIDGET",
-          "widgetId": "widget_4",
+          "widgetId": "widget_7",
           "bbox": {
-            "left": "22.5%",
-            "right": "49.0%",
-            "top": "54.4%",
-            "bottom": "36.7%",
-            "width": "200.00px",
-            "height": "8.9%"
+            "left": "60.3%",
+            "right": "0.00%",
+            "top": "61.5%",
+            "bottom": "0.00%",
+            "width": "0.00%",
+            "height": "0.00%"
           },
           "setting": {
             "autoProps": {
-              "left": false,
-              "right": true,
+              "left": true,
+              "right": false,
               "top": true,
-              "bottom": false,
-              "width": "CUSTOM",
-              "height": "AUTO"
+              "bottom": false
             },
             "vCenter": false,
             "hCenter": false
@@ -75,27 +73,22 @@
       "type": "FIXED",
       "label": "Map FixedLayout",
       "order": [
-        "0"
+        "1"
       ]
     }
   },
-  "exbVersion": "1.18.0",
+  "exbVersion": "1.19.0",
   "mainSizeMode": "LARGE",
-  "theme": "themes/default/",
+  "theme": "themes/astro/",
   "forBuilderAttributes": {
     "lockLayout": false,
-    "viewPortSize": {
-      "LARGE": {
-        "width": 1024,
-        "height": 768
-      }
-    }
+    "viewPortSize": {}
   },
   "template": "blankfullscreen",
   "widgets": {
     "widget_1": {
       "uri": "widgets/arcgis/arcgis-map/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "Map",
       "config": {
         "toolConfig": {
@@ -190,10 +183,10 @@
         }
       ]
     },
-    "widget_4": {
+    "widget_7": {
       "uri": "widgets/FIMLS/",
       "version": "1.18.0",
-      "label": "Flood Inundation Map Layer Switcher",
+      "label": "Flood Inundation Map Layer Switcher 2",
       "config": {
         "exampleConfigProperty": "test",
         "toggleBaseUrlField": "ToggleBaseURL",
@@ -203,7 +196,7 @@
         "minHeightField": "MinHeight",
         "maxHeightField": "MaxHeight"
       },
-      "id": "widget_4",
+      "id": "widget_7",
       "useMapWidgetIds": [
         "widget_1"
       ],
@@ -224,7 +217,7 @@
   "attributes": {
     "portalUrl": "https://sunshinegis.maps.arcgis.com"
   },
-  "timestamp": 1759459911520,
+  "timestamp": 1763936109143,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -257,5 +250,24 @@
     {
       "page_0": []
     }
-  ]
+  ],
+  "customTheme": {},
+  "customThemeOptions": {
+    "sys": {
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    }
+  }
 }
