@@ -4,11 +4,11 @@ trigger:
       - main
   paths:
     include:
-      - 0
+      - 3
     exclude:
       - 1
       - 2
-      - 3
+      - 0
       - azure-pipelines.yml
       - README.md
   
@@ -108,7 +108,7 @@ jobs:
       Contents: 'exb\app.zip'
 
   - powershell: |
-      node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('0', 'app.zip', 'WeW1dajKocDIqUdq')
+      node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('3', 'app.zip', 'WeW1dajKocDIqUdq')
         .then(() => { 
           console.log('--- SCRIPT COMPLETED SUCCESSFULLY ---'); 
           process.exit(0); 
