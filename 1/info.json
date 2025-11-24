@@ -2,7 +2,7 @@
   "created": 1756521672371,
   "description": "",
   "id": "1",
-  "modified": 1763959375946,
+  "modified": 1763961942320,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
@@ -16,11 +16,11 @@
     "status: Published",
     "version:1.19.0",
     "publishVersion:1.19.0",
-    "modified: 1763959368679"
+    "modified: 1763961941443"
   ],
   "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
-  "name": "RadarViewer Testing",
+  "name": "Radar Viewer",
   "isLocalApp": true,
   "url": null
 }

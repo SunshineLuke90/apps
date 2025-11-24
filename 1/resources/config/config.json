@@ -79,15 +79,16 @@
             "right": "47.0%",
             "top": "5.00px",
             "bottom": "89.1%",
-            "width": "3.9%",
-            "height": "6.8%"
+            "width": "40.00px",
+            "height": "40px"
           },
           "setting": {
             "autoProps": {
               "left": false,
               "right": true,
               "top": false,
-              "bottom": true
+              "bottom": true,
+              "width": "CUSTOM"
             },
             "vCenter": false,
             "hCenter": true
@@ -1204,7 +1205,7 @@
       }
     }
   },
-  "timestamp": 1763959368633,
+  "timestamp": 1763961941398,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
