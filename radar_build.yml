@@ -127,9 +127,16 @@ jobs:
     workingDirectory: exb
     displayName: 'list exb contents'
 
-  - powershell: Expand-Archive -Path app.zip -DestinationPath app -Force
+  - task: ExtractFiles@1
+    inputs:
+      archiveFilePatterns: 'exb/app.zip'
+      destinationFolder: 'exb\app'
+      cleanDestinationFolder: true
+      overwriteExistingFiles: false
+
+  - powershell: if (Test-Path -Path app\cdn\*\widgets\new-radar\dist\runtime\assets\sw-radar.js -PathType Leaf) {try{ cp app\cdn\*\widgets\new-radar\dist\runtime\assets\sw-radar.js app\ } catch{ Write-Host "Couldn't find sw-radar.js" }} else { Write-Host "Radar service worker could not be found." }
     workingDirectory: exb
-    displayName: 'Unzip app zip'
+    displayName: copy sw-radar into root directory
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact for Deployment'
