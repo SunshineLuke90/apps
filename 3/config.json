@@ -301,12 +301,27 @@
             "width": 4,
             "height": 380
           }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_71",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 4,
+            "width": 4,
+            "height": 380
+          }
         }
       },
       "type": "ROW",
       "label": "Default",
       "order": [
-        "0"
+        "0",
+        "1"
       ]
     },
     "layout_17": {
@@ -370,6 +385,86 @@
             "height": 32
           },
           "widgetId": "widget_67",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false,
+            "autoProps": {
+              "right": false,
+              "left": true
+            }
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "label": "Default"
+    },
+    "layout_18": {
+      "type": "FIXED",
+      "content": {
+        "4": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": 14,
+            "top": "62.1755%",
+            "bottom": 111,
+            "width": "90.00%",
+            "height": "10.0503%"
+          },
+          "widgetId": "widget_72",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "5": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": "5.0360%",
+            "top": "72.2257%",
+            "bottom": "3.9076%",
+            "width": "90.00%",
+            "height": "23.8693%"
+          },
+          "widgetId": "widget_73",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "6": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": "43.5307%",
+            "width": "100.0000%",
+            "height": "56.4693%"
+          },
+          "widgetId": "widget_74",
+          "setting": {}
+        },
+        "10": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "67.6259%",
+            "right": "4.70%",
+            "top": "51.3400%",
+            "bottom": "40.6198%",
+            "width": 105,
+            "height": 32
+          },
+          "widgetId": "widget_75",
           "setting": {
             "vCenter": false,
             "hCenter": false,
@@ -722,7 +817,7 @@
       "version": "1.19.0",
       "label": "Text 2",
       "config": {
-        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿Radar Test</span></p>",
+        "text": "<p><span style=\"color: var(--light); font-size: 20px;\">﻿Radar Widget</span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true,
@@ -736,7 +831,7 @@
       "version": "1.19.0",
       "label": "Text 3",
       "config": {
-        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up to provide a high refresh rate, low latency radar viewer, within an Experience Builder application.</span></p>",
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up to provide a high refresh rate, low latency radar viewer widget, within an Experience Builder application.</span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true,
@@ -871,6 +966,173 @@
         }
       },
       "id": "widget_70"
+    },
+    "widget_71": {
+      "uri": "widgets/common/card/",
+      "version": "1.19.0",
+      "label": "Card 2",
+      "config": {
+        "DEFAULT": {
+          "enable": true,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            },
+            "borderRadius": {
+              "number": [
+                15,
+                15,
+                15,
+                15
+              ],
+              "unit": "px"
+            }
+          }
+        },
+        "HOVER": {
+          "enable": false,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "boxShadow": {
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "0px",
+              "spread": "0px",
+              "color": ""
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            }
+          }
+        },
+        "itemStyle": "STYLE3",
+        "direction": "Horizontal",
+        "isItemStyleConfirm": true,
+        "isOpenAdvabceSetting": false,
+        "isInitialed": true,
+        "transitionInfo": {
+          "transition": {
+            "type": "None",
+            "direction": "H"
+          },
+          "oneByOneEffect": null
+        }
+      },
+      "id": "widget_71",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_18"
+        }
+      }
+    },
+    "widget_72": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 5",
+      "config": {
+        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿A Better Layer Switcher</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_72"
+    },
+    "widget_73": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 6",
+      "config": {
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, which uses a custom widget to switch between large groups of preconfigured layers.</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_73"
+    },
+    "widget_74": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 3",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "https://placebear.com/900/600",
+            "originalUrl": "https://placebear.com/900/600",
+            "fileName": "600",
+            "originalName": "600",
+            "imgSourceType": "BY_URL"
+          },
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_74"
+    },
+    "widget_75": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 3",
+      "config": {
+        "functionConfig": {
+          "text": "Open",
+          "textExpression": null,
+          "toolTip": "",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/abls",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "primary"
+          },
+          "useCustom": false,
+          "customStyle": {
+            "regular": {
+              "iconProps": {
+                "color": "",
+                "size": 14
+              }
+            },
+            "hover": {
+              "iconProps": {
+                "size": 14
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_75"
     }
   },
   "widgetsManifest": {},
@@ -891,7 +1153,7 @@
       }
     }
   },
-  "timestamp": 1763929896502,
+  "timestamp": 1763937859199,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -1020,5 +1282,5 @@
       }
     }
   },
-  "publishTimestamp": 1763929897264
+  "publishTimestamp": 1763937860264
 }
