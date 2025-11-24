@@ -1,0 +1,139 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - 1
+    exclude:
+      - 3
+      - 2
+      - 0
+      - azure-pipelines.yml
+      - README.md
+  
+
+pool:
+  vmImage: 'windows-latest'
+
+resources:
+  repositories:
+    - repository: widgets
+      type: git
+      name: EB4Dev/widgets
+    - repository: apps
+      type: git
+      name: EB4Dev/apps
+
+jobs:
+
+- job: Build_and_Deploy
+  displayName: 'Build and Deploy'
+  steps:
+
+  - task: UseNode@1
+    inputs:
+      version: '22.x'
+    displayName: 'Install Node.js'
+
+  - powershell: |
+      # Use PowerShell's Invoke-RestMethod and Invoke-WebRequest to download the file.
+      $jsonResponse = Invoke-RestMethod -Uri 'https://downloads.arcgis.com/dms/rest/download/secured/arcgis-experience-builder-1.19.zip?f=json&folder=software%2FExperienceBuilder%2F1.19'
+      Invoke-WebRequest -Uri $jsonResponse.url -OutFile exb.zip
+    displayName: 'Download Experience Builder'
+
+  - powershell: Expand-Archive -Path exb.zip -DestinationPath exb -Force
+    displayName: 'Unzip Experience Builder'
+
+  - checkout: widgets
+    path: s\exb\client\your-extensions\widgets
+    displayName: 'Checkout widgets'
+
+  - powershell: |
+      # Use New-Item to create the required directory structure.
+      New-Item -ItemType Directory -Path "exb\server\public\apps" -Force
+    displayName: 'Create App directory'
+  
+  - checkout: self
+    path: s\exb\server\public\apps
+    displayName: 'Clone apps to app directory'
+
+  - task: Npm@1
+    inputs:
+      command: ci
+      workingDir: exb\server
+    displayName: 'NPM install in server folder'
+
+  - task: Npm@1
+    inputs:
+      command: custom
+      customCommand: install hls.js
+      workingDir: exb\client
+    displayName: 'Install hls.js dependency for camviewer widget'
+
+  - task: Npm@1
+    inputs:
+      command: ci
+      workingDir: exb\client
+    displayName: 'NPM install in client folder'
+
+  - task: Npm@1
+    inputs:
+      customCommand: run build:dev
+      workingDir: exb\client
+    displayName: 'Build widgets - dev'
+
+  - task: Npm@1
+    inputs:
+      customCommand: run build:prod
+      workingDir: exb\client
+    displayName: 'Build widgets'
+
+  #- powershell: npm run build:dev
+  #  displayName: 'Build widgets - dev'
+  #  workingDirectory: ..\exb\ArcGISExperienceBuilder\client
+
+  #- powershell: npm run build:prod
+  #  displayName: 'Build widgets'
+  #  workingDirectory: ..\exb\ArcGISExperienceBuilder\client
+
+#  - powershell: npm run build:for-download
+#    displayName: 'DEBUG -  Attempting build:for-download manually'
+#    workingDirectory: exb\client
+#    continueOnError: true
+
+  - task: DeleteFiles@1
+    displayName: 'Delete old app.zip'
+    inputs:
+      Contents: 'exb\app.zip'
+
+  - powershell: |
+      node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('1', 'app.zip', 'WeW1dajKocDIqUdq')
+        .then(() => { 
+          console.log('--- SCRIPT COMPLETED SUCCESSFULLY ---'); 
+          process.exit(0); 
+        })
+        .catch(err => { 
+          console.error('--- SCRIPT FAILED WITH AN ERROR ---'); 
+          console.error(err); 
+          process.exit(1); 
+        });"
+    displayName: 'Run download script'
+    workingDirectory: exb
+    env:
+      NODE_ENV: production
+
+  - powershell: ls
+    workingDirectory: exb
+    displayName: 'list exb contents'
+
+  - powershell: Expand-Archive -Path app.zip -DestinationPath app -Force
+    workingDirectory: exb
+    displayName: 'Unzip app zip'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact for Deployment'
+    inputs:
+      PathtoPublish: 'exb\app'
+      ArtifactName: 'radar'
+      publishLocation: 'Container'
