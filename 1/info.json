@@ -2,11 +2,11 @@
   "created": 1756521672371,
   "description": "",
   "id": "1",
-  "modified": 1763929432805,
+  "modified": 1763959375946,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
-  "title": "RadarViewer Testing",
+  "title": "Radar Viewer",
   "type": "Web Experience",
   "snippet": "",
   "typeKeywords": [
@@ -15,12 +15,12 @@
     "JavaScript",
     "status: Published",
     "version:1.19.0",
-    "publishVersion:1.18.0",
-    "modified: 1763929348711"
+    "publishVersion:1.19.0",
+    "modified: 1763959368679"
   ],
   "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
-  "name": "Untitled experience 1",
+  "name": "RadarViewer Testing",
   "isLocalApp": true,
   "url": null
 }

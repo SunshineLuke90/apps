@@ -1,1 +1,15 @@
-{}
+{
+  "1763957977991": {
+    "originalName": "favicon-96x96.png",
+    "fileName": "1763957977991.png",
+    "size": 6444,
+    "url": "${appResourceUrl}/images/widget_5/1763957977991.png",
+    "created": 1763957977991,
+    "resourcesPrefix": "images/widget_5",
+    "referredIds": [],
+    "originId": "1763957977991",
+    "fileFormat": "image/png",
+    "originalWidth": 96,
+    "originalHeight": 96
+  }
+}
