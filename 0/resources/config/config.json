@@ -49,14 +49,14 @@
       "content": {
         "0": {
           "type": "WIDGET",
-          "widgetId": "widget_4",
+          "widgetId": "widget_5",
           "bbox": {
-            "left": "3.7%",
-            "right": "93.2%",
-            "top": "88.8%",
-            "bottom": "7.0%",
+            "left": "16.00px",
+            "right": "94.8%",
+            "top": "90.0%",
+            "bottom": "24.00px",
             "width": "3.1%",
-            "height": "4.2%"
+            "height": "4.9%"
           },
           "setting": {
             "autoProps": {
@@ -64,8 +64,8 @@
               "right": true,
               "top": true,
               "bottom": false,
-              "height": "AUTO",
-              "width": "AUTO"
+              "width": "AUTO",
+              "height": "AUTO"
             },
             "vCenter": false,
             "hCenter": false
@@ -185,7 +185,7 @@
         }
       }
     },
-    "widget_4": {
+    "widget_5": {
       "uri": "widgets/CamViewer/",
       "version": "1.18.0",
       "label": "Camera Viewer",
@@ -194,18 +194,18 @@
           "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M13 6.133c0 .598-.28 1.46-.825 2.51-.53 1.02-1.247 2.102-1.981 3.102A46 46 0 0 1 8 14.492a48 48 0 0 1-2.194-2.747c-.734-1-1.451-2.081-1.98-3.102C3.28 7.593 3 6.731 3 6.133 3 3.277 5.26 1 8 1s5 2.277 5 5.133m1 0c0 2.685-3.768 7.311-5.332 9.115C8.258 15.722 8 16 8 16s-.258-.279-.668-.751C5.768 13.444 2 8.817 2 6.133 2 2.746 4.686 0 8 0s6 2.746 6 6.133M10 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m1 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0\" clip-rule=\"evenodd\"></path></svg>",
           "properties": {
             "filename": "Pin",
-            "color": "var(--ref-palette-neutral-1100)",
             "originalName": "outlined/application/pin.svg",
             "path": [
-              "general",
+              "generalAndArrows",
               "mapPin"
             ],
+            "inlineSvg": true,
             "isUploaded": false,
-            "inlineSvg": true
+            "color": "var(--ref-palette-neutral-1100)"
           }
         }
       },
-      "id": "widget_4",
+      "id": "widget_5",
       "useMapWidgetIds": [
         "widget_1"
       ],
@@ -227,7 +227,20 @@
             "url": ""
           }
         },
-        "textColor": "var(--ref-palette-neutral-100)"
+        "textColor": "var(--ref-palette-neutral-100)",
+        "border": {
+          "type": "dashed",
+          "width": "0px"
+        },
+        "borderRadius": {
+          "number": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "unit": "px"
+        }
       }
     }
   },
@@ -239,7 +252,7 @@
   "attributes": {
     "portalUrl": "https://sunshinegis.maps.arcgis.com"
   },
-  "timestamp": 1763929945486,
+  "timestamp": 1768197619858,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
