@@ -19,11 +19,13 @@ pool:
 resources:
   repositories:
     - repository: widgets
-      type: git
-      name: EB4Dev/widgets
+      type: github
+      name: SunshineLuke90/widgets
+      endpoint: https://github.com/SunshineLuke90/widgets.git
     - repository: apps
-      type: git
-      name: EB4Dev/apps
+      type: github
+      name: SunshineLuke90/apps
+      endpoint: https://github.com/SunshineLuke90/apps.git
 
 jobs:
 
@@ -54,7 +56,7 @@ jobs:
       New-Item -ItemType Directory -Path "exb\server\public\apps" -Force
     displayName: 'Create App directory'
   
-  - checkout: self
+  - checkout: apps
     path: s\exb\server\public\apps
     displayName: 'Clone apps to app directory'
 
