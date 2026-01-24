@@ -4,12 +4,12 @@ trigger:
       - main
   paths:
     include:
-      - 1
-    exclude:
       - 4
-      - 3
+    exclude:
+      - 1
       - 2
       - 0
+      - 3
       - azure-pipelines.yml
       - README.md
 
@@ -21,7 +21,7 @@ resources:
     - repository: widgets
       type: github
       name: SunshineLuke90/widgets
-      endpoint: SunshineLuke90
+      endpoint: Sunshineluke90
     - repository: apps
       type: github
       name: SunshineLuke90/apps
@@ -54,7 +54,7 @@ jobs:
           New-Item -ItemType Directory -Path "exb\server\public\apps" -Force
         displayName: "Create App directory"
 
-      - checkout: self
+      - checkout: apps
         path: s\exb\server\public\apps
         displayName: "Clone apps to app directory"
 
@@ -101,7 +101,7 @@ jobs:
           Contents: 'exb\app.zip'
 
       - powershell: |
-          node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('1', 'app.zip', 'WeW1dajKocDIqUdq')
+          node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('4', 'app.zip', 'WeW1dajKocDIqUdq')
             .then(() => { 
               console.log('--- SCRIPT COMPLETED SUCCESSFULLY ---'); 
               process.exit(0); 
@@ -120,20 +120,13 @@ jobs:
         workingDirectory: exb
         displayName: "list exb contents"
 
-      - task: ExtractFiles@1
-        inputs:
-          archiveFilePatterns: "exb/app.zip"
-          destinationFolder: 'exb\app'
-          cleanDestinationFolder: true
-          overwriteExistingFiles: false
-
-      - powershell: if (Test-Path -Path app\cdn\*\widgets\new-radar\dist\runtime\assets\sw-radar.js -PathType Leaf) {try{ cp app\cdn\*\widgets\new-radar\dist\runtime\assets\sw-radar.js app\ } catch{ Write-Host "Couldn't find sw-radar.js" }} else { Write-Host "Radar service worker could not be found." }
+      - powershell: Expand-Archive -Path app.zip -DestinationPath app -Force
         workingDirectory: exb
-        displayName: copy sw-radar into root directory
+        displayName: "Unzip app zip"
 
       - task: PublishBuildArtifacts@1
         displayName: "Publish Artifact for Deployment"
         inputs:
           PathtoPublish: 'exb\app'
-          ArtifactName: "radar"
+          ArtifactName: "app"
           publishLocation: "Container"
