@@ -6,6 +6,7 @@ trigger:
     include:
       - 1
     exclude:
+      - 4
       - 3
       - 2
       - 0
@@ -19,11 +20,13 @@ pool:
 resources:
   repositories:
     - repository: widgets
-      type: git
-      name: EB4Dev/widgets
+      type: github
+      name: SunshineLuke90/widgets
+      endpoint: SunshineLuke90
     - repository: apps
-      type: git
-      name: EB4Dev/apps
+      type: github
+      name: SunshineLuke90/apps
+      endpoint: SunshineLuke90
 
 jobs:
 
