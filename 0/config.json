@@ -9,7 +9,8 @@
       },
       "isDefault": true,
       "isVisible": true,
-      "label": "Page"
+      "label": "Page",
+      "header": true
     }
   },
   "layouts": {
@@ -20,10 +21,10 @@
           "type": "WIDGET",
           "widgetId": "widget_1",
           "bbox": {
-            "left": "0%",
-            "right": "0%",
-            "top": "0%",
-            "bottom": "0%",
+            "left": "8.00px",
+            "right": "8.00px",
+            "top": "8.00px",
+            "bottom": "8.00px",
             "width": "100%",
             "height": "100%"
           },
@@ -76,6 +77,97 @@
       "label": "Map FixedLayout",
       "order": [
         "0"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "8.00px",
+            "right": "8.00px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "setting": {
+        "lockDescendants": true
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_3": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "width": "60.00px",
+            "height": "59px"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "width": "360px",
+            "height": "59px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "STRETCH",
+              "height": "AUTO"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {
+            "width": "50.00px",
+            "height": "50px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "FLEX_ROW",
+      "label": "Default",
+      "setting": {
+        "space": 8
+      },
+      "order": [
+        "0",
+        "1",
+        "2"
       ]
     }
   },
@@ -242,6 +334,134 @@
           "unit": "px"
         }
       }
+    },
+    "widget_6": {
+      "uri": "widgets/layout/flowrow/",
+      "version": "1.19.0",
+      "label": "Flow Row",
+      "config": {
+        "space": {
+          "distance": 8,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_6",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_7": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_7/1769222313456.png",
+            "originalUrl": "${appResourceUrl}/images/widget_7/1769222313456.png",
+            "fileName": "1769222313456.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769222313456",
+            "originalWidth": 96,
+            "originalHeight": 96
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_7"
+    },
+    "widget_8": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text",
+      "config": {
+        "text": "<h5>Camera Viewer</h5>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_8"
+    },
+    "widget_9": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15.29 6.208 8 1 .71 6.208a.5.5 0 1 0 .58.813L2 6.515V15h12V6.514l.71.507a.5.5 0 0 0 .58-.813M13 5.8 8 2.229 3 5.8V14h3v-4h4v4h3zM9 14H7v-3h2z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Home",
+                "originalName": "outlined/application/home.svg",
+                "path": [
+                  "generalAndArrows",
+                  "home"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/",
+            "expression": null
+          },
+          "toolTip": "Home",
+          "toolTipExpression": null
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(147,190,230,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "color": "rgba(147,190,230,0)"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_9",
+      "useDataSources": []
     }
   },
   "widgetsManifest": {},
@@ -252,7 +472,7 @@
   "attributes": {
     "portalUrl": "https://sunshinegis.maps.arcgis.com"
   },
-  "timestamp": 1768197619858,
+  "timestamp": 1769222426244,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -303,6 +523,50 @@
             "text": "#ffffff"
           }
         }
+      },
+      "typography": {
+        "h1": {
+          "fontFamily": "Noto Sans"
+        },
+        "h2": {
+          "fontFamily": "Noto Sans"
+        },
+        "h3": {
+          "fontFamily": "Noto Sans"
+        },
+        "h4": {
+          "fontFamily": "Noto Sans"
+        },
+        "h5": {
+          "fontFamily": "Noto Sans"
+        },
+        "h6": {
+          "fontFamily": "Noto Sans"
+        },
+        "title1": {
+          "fontFamily": "Noto Sans"
+        },
+        "title2": {
+          "fontFamily": "Noto Sans"
+        },
+        "title3": {
+          "fontFamily": "Noto Sans"
+        },
+        "inputField": {
+          "fontFamily": "Noto Sans"
+        },
+        "body": {
+          "fontFamily": "Noto Sans"
+        },
+        "label1": {
+          "fontFamily": "Noto Sans"
+        },
+        "label2": {
+          "fontFamily": "Noto Sans"
+        },
+        "label3": {
+          "fontFamily": "Noto Sans"
+        }
       }
     },
     "comp": {
@@ -313,7 +577,25 @@
           }
         }
       }
+    },
+    "ref": {
+      "typeface": {
+        "customFonts": [
+          {
+            "name": "Noto Sans",
+            "url": "https://fonts.googleapis.com/css2?family=Noto+Sans"
+          }
+        ]
+      }
     }
   },
-  "publishTimestamp": 1768197620553
+  "header": {
+    "layout": {
+      "LARGE": "layout_2"
+    },
+    "height": {
+      "LARGE": "60px"
+    }
+  },
+  "publishTimestamp": 1769222487817
 }

@@ -600,7 +600,15 @@
               }
             },
             "position": "LEFT"
-          }
+          },
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_blank",
+            "value": "https://exb.luciuscreamer.com/",
+            "expression": null
+          },
+          "toolTip": "Home",
+          "toolTipExpression": null
         },
         "styleConfig": {
           "themeStyle": {
@@ -677,7 +685,7 @@
   "attributes": {
     "portalUrl": "https://SunshineGIS.maps.arcgis.com"
   },
-  "timestamp": 1769214780506,
+  "timestamp": 1769221822762,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -793,5 +801,5 @@
       "LARGE": "60px"
     }
   },
-  "publishTimestamp": 1769214782490
+  "publishTimestamp": 1769221823678
 }

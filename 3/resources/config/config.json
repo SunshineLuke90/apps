@@ -315,13 +315,28 @@
             "width": 4,
             "height": 380
           }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_76",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 8,
+            "width": 4,
+            "height": 380
+          }
         }
       },
       "type": "ROW",
       "label": "Default",
       "order": [
         "0",
-        "1"
+        "1",
+        "2"
       ]
     },
     "layout_17": {
@@ -420,7 +435,8 @@
           "widgetId": "widget_72",
           "setting": {
             "vCenter": false,
-            "hCenter": false
+            "hCenter": false,
+            "lockLayout": true
           },
           "isPending": false
         },
@@ -465,6 +481,86 @@
             "height": 32
           },
           "widgetId": "widget_75",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false,
+            "autoProps": {
+              "right": false,
+              "left": true
+            }
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "label": "Default"
+    },
+    "layout_19": {
+      "type": "FIXED",
+      "content": {
+        "4": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": 14,
+            "top": "62.1755%",
+            "bottom": 111,
+            "width": "90.00%",
+            "height": "10.0503%"
+          },
+          "widgetId": "widget_77",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "5": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": "5.0360%",
+            "top": "72.2257%",
+            "bottom": "3.9076%",
+            "width": "90.00%",
+            "height": "23.8693%"
+          },
+          "widgetId": "widget_78",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "6": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": "43.5307%",
+            "width": "100.0000%",
+            "height": "56.4693%"
+          },
+          "widgetId": "widget_79",
+          "setting": {}
+        },
+        "10": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "67.6259%",
+            "right": "4.70%",
+            "top": "51.3400%",
+            "bottom": "40.6198%",
+            "width": 105,
+            "height": 32
+          },
+          "widgetId": "widget_80",
           "setting": {
             "vCenter": false,
             "hCenter": false,
@@ -854,11 +950,15 @@
           "linkParam": {},
           "scale": "Fit",
           "imageParam": {
-            "url": "https://placebear.com/900/600",
-            "originalUrl": "https://placebear.com/900/600",
-            "fileName": "600",
-            "originalName": "600",
-            "imgSourceType": "BY_URL"
+            "url": "${appResourceUrl}/images/widget_65/1769222028455.png",
+            "originalUrl": "${appResourceUrl}/images/widget_65/1769222028455.png",
+            "fileName": "1769222028455.png",
+            "originalName": "Screenshot 2026-01-23 at 8.33.38 PM.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769222028455",
+            "originalWidth": 1370,
+            "originalHeight": 840
           },
           "imgSourceType": "",
           "srcExpression": null,
@@ -1051,7 +1151,7 @@
       "version": "1.19.0",
       "label": "Text 5",
       "config": {
-        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿A Better Layer Switcher</span></p>",
+        "text": "<p><span style=\"color: var(--light); font-size: 20px;\">﻿Camera Viewer</span></p>",
         "placeholder": "<p><span style=\"color: var(--light); font-size: 20px;\">Card title</span></p>",
         "style": {
           "verticalAlign": "start",
@@ -1066,7 +1166,7 @@
       "version": "1.19.0",
       "label": "Text 6",
       "config": {
-        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, which uses a custom widget to switch between large groups of preconfigured layers.</span></p>",
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, which uses a custom widget to quickly display live .m3u8 video feeds in a video player.</span></p>",
         "placeholder": "<p><span style=\"color: var(--light);\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>",
         "style": {
           "verticalAlign": "start",
@@ -1087,11 +1187,15 @@
           "linkParam": {},
           "scale": "Fit",
           "imageParam": {
-            "url": "https://placebear.com/900/600",
-            "originalUrl": "https://placebear.com/900/600",
-            "fileName": "600",
-            "originalName": "600",
-            "imgSourceType": "BY_URL"
+            "url": "${appResourceUrl}/images/widget_74/1769222625954.png",
+            "originalUrl": "${appResourceUrl}/images/widget_74/1769222625954.png",
+            "fileName": "1769222625954.png",
+            "originalName": "Screenshot 2026-01-23 at 8.43.34 PM.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769222625954",
+            "originalWidth": 1462,
+            "originalHeight": 1110
           },
           "imgSourceType": "",
           "srcExpression": null,
@@ -1114,7 +1218,7 @@
           "linkParam": {
             "linkType": "WEB_ADDRESS",
             "openType": "_self",
-            "value": "https://exb.luciuscreamer.com/abls",
+            "value": "https://exb.luciuscreamer.com/camera",
             "expression": null
           }
         },
@@ -1139,6 +1243,179 @@
         }
       },
       "id": "widget_75"
+    },
+    "widget_76": {
+      "uri": "widgets/common/card/",
+      "version": "1.19.0",
+      "label": "Card 3",
+      "config": {
+        "DEFAULT": {
+          "enable": true,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            },
+            "borderRadius": {
+              "number": [
+                15,
+                15,
+                15,
+                15
+              ],
+              "unit": "px"
+            }
+          }
+        },
+        "HOVER": {
+          "enable": false,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "boxShadow": {
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "0px",
+              "spread": "0px",
+              "color": ""
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            }
+          }
+        },
+        "itemStyle": "STYLE3",
+        "direction": "Horizontal",
+        "isItemStyleConfirm": true,
+        "isOpenAdvabceSetting": false,
+        "isInitialed": true,
+        "transitionInfo": {
+          "transition": {
+            "type": "None",
+            "direction": "H"
+          },
+          "oneByOneEffect": null
+        }
+      },
+      "id": "widget_76",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_19"
+        }
+      }
+    },
+    "widget_77": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 7",
+      "config": {
+        "text": "<p><span style=\"color: var(--light); font-size: 20px;\">Calendar Widget</span></p>",
+        "placeholder": "<p><span style=\"color: var(--light); font-size: 20px;\">Card title</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_77"
+    },
+    "widget_78": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 8",
+      "config": {
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, which uses a custom calendar widget, with message actions configured.</span></p>",
+        "placeholder": "<p><span style=\"color: var(--light);\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_78"
+    },
+    "widget_79": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 4",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_79/1769221958104.png",
+            "originalUrl": "${appResourceUrl}/images/widget_79/1769221958104.png",
+            "fileName": "1769221958104.png",
+            "originalName": "Screenshot 2026-01-23 at 8.32.16 PM.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769221958104",
+            "originalWidth": 2858,
+            "originalHeight": 908
+          },
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_79"
+    },
+    "widget_80": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 4",
+      "config": {
+        "functionConfig": {
+          "text": "Open",
+          "textExpression": null,
+          "toolTip": "",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/calendar",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "primary"
+          },
+          "useCustom": false,
+          "customStyle": {
+            "regular": {
+              "iconProps": {
+                "color": "",
+                "size": 14
+              }
+            },
+            "hover": {
+              "iconProps": {
+                "size": 14
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_80"
     }
   },
   "widgetsManifest": {},
@@ -1159,7 +1436,7 @@
       }
     }
   },
-  "timestamp": 1763937859199,
+  "timestamp": 1769222636929,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
