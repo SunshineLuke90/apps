@@ -1,1 +1,12 @@
-{}
+{
+  "1769225704316.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1769225704316.png",
+    "properties": {
+      "filename": "1769225704316.png",
+      "originalName": "favicon-96x96.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1769225704316.png",
+      "isUploaded": true,
+      "inlineSvg": false
+    }
+  }
+}

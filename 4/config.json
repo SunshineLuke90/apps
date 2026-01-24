@@ -47,10 +47,34 @@
       ]
     },
     "layout_2": {
-      "content": {},
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {
+            "left": "50%",
+            "right": "38.4%",
+            "top": "8.00px",
+            "bottom": "78.5%",
+            "width": "40.00px",
+            "height": "40.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            },
+            "hCenter": true
+          }
+        }
+      },
       "type": "FIXED",
       "label": "Map FixedLayout",
-      "order": []
+      "order": [
+        "0"
+      ]
     },
     "layout_4": {
       "content": {
@@ -210,6 +234,86 @@
         "1",
         "2"
       ]
+    },
+    "layout_7": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_13",
+          "bbox": {
+            "left": "6.00%",
+            "right": "13.6%",
+            "top": "11.50%",
+            "bottom": "15.7%",
+            "width": "36.00px",
+            "height": "300px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true,
+              "height": {}
+            },
+            "heightMode": "ratio",
+            "aspectRatio": "100:100"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_14",
+          "bbox": {
+            "left": "20.00%",
+            "right": "9.1%",
+            "top": "12.00%",
+            "bottom": "50.1%",
+            "width": "254.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_15",
+          "bbox": {
+            "left": "20.00%",
+            "right": "8.60%",
+            "top": "25.20%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "setting": {
+        "lockDescendants": true
+      }
     }
   },
   "exbVersion": "1.19.0",
@@ -266,13 +370,12 @@
       ],
       "style": {
         "background": {
-          "color": "var(--ref-palette-neutral-1100)",
+          "color": "",
           "fillType": "fill",
           "image": {
             "url": ""
           }
         },
-        "textColor": "var(--ref-palette-neutral-100)",
         "border": {
           "type": "solid",
           "color": "var(--ref-palette-neutral-600)",
@@ -603,7 +706,7 @@
           },
           "linkParam": {
             "linkType": "WEB_ADDRESS",
-            "openType": "_blank",
+            "openType": "_self",
             "value": "https://exb.luciuscreamer.com/",
             "expression": null
           },
@@ -631,12 +734,173 @@
       },
       "id": "widget_11",
       "useDataSources": []
+    },
+    "widget_12": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 2",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5\"></path><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Info",
+                "originalName": "outlined/suggested/info.svg",
+                "path": [
+                  "generalAndArrows",
+                  "info"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "toolTip": "Widget Information",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "DIALOG",
+            "value": "dialog_1"
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false
+            },
+            "regular": {
+              "enableDynamicStyle": false
+            }
+          }
+        }
+      },
+      "id": "widget_12",
+      "useDataSources": []
+    },
+    "widget_13": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 2",
+      "config": {
+        "functionConfig": {
+          "altText": "Favicon",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_9/1769213846057.png",
+            "originalUrl": "${appResourceUrl}/images/widget_9/1769213846057.png",
+            "fileName": "1769213846057.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769213846057",
+            "originalWidth": 96,
+            "originalHeight": 96,
+            "cropParam": {
+              "svgViewBox": "0 0 16 16",
+              "svgPath": "M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0",
+              "cropShape": "circle"
+            }
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null,
+          "altTextExpression": null
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_13"
+    },
+    "widget_14": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 2",
+      "config": {
+        "text": "<p><strong style=\"font-size: 14px;\">﻿Calendar Widget</strong></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_14"
+    },
+    "widget_15": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 3",
+      "config": {
+        "text": "<p>﻿This application is fully powered by a custom Calendar Widget, which populates the bottom half of the screen. This widget uses a feature service to populate events on a calendar, and implements the On Selection Change Event message, to be able to communicate and interact with other widgets. Try clicking on an event in the calendar, to see what happens to the map and feature information panes.</p><p><br></p><p>Example event data can be found for the week of January 13th.</p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_15"
     }
   },
   "widgetsManifest": {},
   "views": {},
   "sections": {},
-  "dialogs": {},
+  "dialogs": {
+    "dialog_1": {
+      "id": "dialog_1",
+      "mode": "ANCHORED",
+      "blockPage": true,
+      "sizeMode": {
+        "LARGE": {
+          "width": "400.00px",
+          "height": "360.00px"
+        }
+      },
+      "interactionType": null,
+      "interactionStyles": null,
+      "confirmBeforeClose": true,
+      "alwaysShowConfirmation": false,
+      "dialogBackground": {
+        "color": "var(--ref-palette-neutral-1300)",
+        "fillType": "fill",
+        "image": {
+          "url": ""
+        }
+      },
+      "overlayColor": null,
+      "layout": {
+        "LARGE": "layout_7"
+      },
+      "index": 0,
+      "isSplash": false,
+      "border": {
+        "color": "var(--sys-color-divider-secondary)",
+        "type": "solid",
+        "width": "2px"
+      },
+      "label": "Widget Information",
+      "closeWhenClickOverlay": true,
+      "effect": {
+        "type": "FADE_IN",
+        "option": {
+          "direction": null
+        }
+      },
+      "textColor": "var(--ref-palette-neutral-100)",
+      "borderRadius": {
+        "number": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "unit": "px"
+      }
+    }
+  },
   "messageConfigs": {
     "messageConfig_9": {
       "id": "messageConfig_9",
@@ -683,9 +947,20 @@
     }
   },
   "attributes": {
-    "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    "portalUrl": "https://SunshineGIS.maps.arcgis.com",
+    "favicon": {
+      "svg": "${appResourceUrl}/images/icon_picker_in_setting/1769225752178.png",
+      "properties": {
+        "filename": "1769225752178.png",
+        "originalName": "favicon-96x96.png",
+        "path": "${appResourceUrl}/images/icon_picker_in_setting/1769225752178.png",
+        "inlineSvg": false,
+        "isUploaded": true,
+        "color": "var(--ref-palette-neutral-1100)"
+      }
+    }
   },
-  "timestamp": 1769221822762,
+  "timestamp": 1769226336638,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -771,6 +1046,27 @@
         "shape1": "7px",
         "shape2": "13px",
         "inputField": "50px"
+      },
+      "color": {
+        "mode": "dark",
+        "dark": {
+          "surface": {
+            "background": "var(--ref-palette-neutral-1200)",
+            "backgroundText": "var(--ref-palette-neutral-100)",
+            "backgroundHint": "var(--ref-palette-neutral-100)",
+            "paper": "var(--ref-palette-neutral-1200)",
+            "paperText": "var(--ref-palette-neutral-100)",
+            "paperHint": "var(--ref-palette-neutral-100)",
+            "overlay": "var(--ref-palette-neutral-1000)",
+            "overlayText": "var(--ref-palette-neutral-100)",
+            "overlayHint": "var(--ref-palette-neutral-100)"
+          },
+          "action": {
+            "default": "var(--ref-palette-neutral-1300)",
+            "hover": "var(--ref-palette-neutral-1200)",
+            "text": "var(--ref-palette-neutral-100)"
+          }
+        }
       }
     },
     "ref": {
@@ -801,5 +1097,5 @@
       "LARGE": "60px"
     }
   },
-  "publishTimestamp": 1769221823678
+  "publishTimestamp": 1769226348782
 }

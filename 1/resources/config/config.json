@@ -801,7 +801,7 @@
           },
           "linkParam": {
             "linkType": "WEB_ADDRESS",
-            "openType": "_blank",
+            "openType": "_self",
             "value": "https://exb.luciuscreamer.com",
             "expression": null
           }
@@ -1205,7 +1205,7 @@
       }
     }
   },
-  "timestamp": 1763961941398,
+  "timestamp": 1769225127473,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",

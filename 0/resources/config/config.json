@@ -52,12 +52,12 @@
           "type": "WIDGET",
           "widgetId": "widget_5",
           "bbox": {
-            "left": "16.00px",
-            "right": "94.8%",
-            "top": "90.0%",
+            "left": "50%",
+            "right": "46.3%",
+            "top": "90.5%",
             "bottom": "24.00px",
-            "width": "3.1%",
-            "height": "4.9%"
+            "width": "3.2%",
+            "height": "5.5%"
           },
           "setting": {
             "autoProps": {
@@ -69,14 +69,36 @@
               "height": "AUTO"
             },
             "vCenter": false,
-            "hCenter": false
+            "hCenter": true
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_10",
+          "bbox": {
+            "left": "50%",
+            "right": "39.1%",
+            "top": "8.00px",
+            "bottom": "80.8%",
+            "width": "40.00px",
+            "height": "40.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true
+            },
+            "hCenter": true
           }
         }
       },
       "type": "FIXED",
       "label": "Map FixedLayout",
       "order": [
-        "0"
+        "0",
+        "1"
       ]
     },
     "layout_2": {
@@ -169,6 +191,84 @@
         "1",
         "2"
       ]
+    },
+    "layout_4": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_11",
+          "bbox": {
+            "left": "6.00%",
+            "right": "24.2%",
+            "top": "11.50%",
+            "bottom": "15.7%",
+            "width": "36.00px",
+            "height": "84.3%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true,
+              "height": {}
+            },
+            "heightMode": "ratio",
+            "aspectRatio": "100:100"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {
+            "left": "20.00%",
+            "right": "9.1%",
+            "top": "12.00%",
+            "bottom": "57.7%",
+            "width": "254.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_13",
+          "bbox": {
+            "left": "20.00%",
+            "right": "8.60%",
+            "top": "25.20%",
+            "bottom": "0.00px",
+            "width": "90.9%",
+            "height": "19.7%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            }
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "setting": {
+        "lockDescendants": true
+      }
     }
   },
   "exbVersion": "1.19.0",
@@ -463,17 +563,175 @@
       },
       "id": "widget_9",
       "useDataSources": []
+    },
+    "widget_10": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 2",
+      "config": {
+        "functionConfig": {
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5\"></path><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Info",
+                "originalName": "outlined/suggested/info.svg",
+                "path": [
+                  "generalAndArrows",
+                  "info"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "text": "",
+          "textExpression": null,
+          "toolTip": "Information",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "DIALOG",
+            "value": "dialog_1"
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          }
+        }
+      },
+      "id": "widget_10"
+    },
+    "widget_11": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 2",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_7/1769222313456.png",
+            "originalUrl": "${appResourceUrl}/images/widget_7/1769222313456.png",
+            "fileName": "1769222313456.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1769222313456",
+            "originalWidth": 96,
+            "originalHeight": 96
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_11"
+    },
+    "widget_12": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 2",
+      "config": {
+        "text": "<p><strong style=\"font-size: 14px;\">﻿Camera Widget</strong></p>",
+        "placeholder": "<p><strong style=\"font-size: 14px;\">Double click to edit text</strong></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_12"
+    },
+    "widget_13": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 3",
+      "config": {
+        "text": "<p>This application is fully powered by a custom Camera Viewer Widget, found at the bottom of the page. This widget provides a single button control to toggle the visibility of a camera points layer, which is stored in the map. When a feature is clicked, the widget will automatically open a live camera feed, using a url stored in the datasource. The camera playback is achieved using the open source hls.js javascript library, and camera feeds and locations are provided by MoDOT.</p>",
+        "placeholder": "Double click to edit text",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_13"
     }
   },
   "widgetsManifest": {},
   "views": {},
   "sections": {},
-  "dialogs": {},
+  "dialogs": {
+    "dialog_1": {
+      "id": "dialog_1",
+      "mode": "ANCHORED",
+      "blockPage": true,
+      "sizeMode": {
+        "LARGE": {
+          "width": "400.00px",
+          "height": "360.00px"
+        }
+      },
+      "interactionType": null,
+      "interactionStyles": null,
+      "confirmBeforeClose": true,
+      "alwaysShowConfirmation": false,
+      "dialogBackground": {
+        "color": "var(--ref-palette-neutral-1300)",
+        "fillType": "fill",
+        "image": {
+          "url": ""
+        }
+      },
+      "overlayColor": null,
+      "layout": {
+        "LARGE": "layout_4"
+      },
+      "index": 0,
+      "isSplash": false,
+      "border": {
+        "color": "var(--sys-color-divider-secondary)",
+        "type": "solid",
+        "width": "2px"
+      },
+      "label": "Widget Info",
+      "closeWhenClickOverlay": true,
+      "effect": {
+        "type": "FADE_IN",
+        "option": {
+          "direction": null
+        }
+      },
+      "textColor": "var(--ref-palette-neutral-100)",
+      "borderRadius": {
+        "number": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "unit": "px"
+      }
+    }
+  },
   "messageConfigs": {},
   "attributes": {
-    "portalUrl": "https://sunshinegis.maps.arcgis.com"
+    "portalUrl": "https://sunshinegis.maps.arcgis.com",
+    "favicon": {
+      "svg": "${appResourceUrl}/images/icon_picker_in_setting/1769225704316.png",
+      "properties": {
+        "filename": "1769225704316.png",
+        "originalName": "favicon-96x96.png",
+        "path": "${appResourceUrl}/images/icon_picker_in_setting/1769225704316.png",
+        "inlineSvg": false,
+        "isUploaded": true,
+        "color": "var(--ref-palette-neutral-1100)"
+      }
+    }
   },
-  "timestamp": 1769222426244,
+  "timestamp": 1769225712555,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
