@@ -21,11 +21,11 @@ resources:
     - repository: widgets
       type: github
       name: SunshineLuke90/widgets
-      endpoint: https://github.com/SunshineLuke90/widgets.git
+      endpoint: Sunshineluke90
     - repository: apps
       type: github
       name: SunshineLuke90/apps
-      endpoint: https://github.com/SunshineLuke90/apps.git
+      endpoint: SunshineLuke90
 
 jobs:
 
