@@ -447,6 +447,18 @@
               "attachments": true,
               "lastEditInfo": true
             }
+          },
+          {
+            "id": "19d3c890-ffc7-11f0-8aac-37442fd195c8",
+            "label": "Events FC 2",
+            "useDataSourceId": "dataSource_1-19bf80410db-layer-6-selection",
+            "contentConfig": {
+              "title": true,
+              "fields": true,
+              "media": true,
+              "attachments": true,
+              "lastEditInfo": true
+            }
           }
         ],
         "featureNavigator": false,
@@ -525,6 +537,13 @@
         "widget_4"
       ],
       "enableDataAction": false,
+      "style": {
+        "border": {
+          "type": "solid",
+          "color": "var(--ref-palette-neutral-600)",
+          "width": "2px"
+        }
+      },
       "useDataSources": [
         {
           "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2-selection",
@@ -532,15 +551,15 @@
           "dataViewId": "selection",
           "rootDataSourceId": "dataSource_1",
           "useFieldsInPopupInfo": true
+        },
+        {
+          "dataSourceId": "dataSource_1-19bf80410db-layer-6-selection",
+          "mainDataSourceId": "dataSource_1-19bf80410db-layer-6",
+          "dataViewId": "selection",
+          "rootDataSourceId": "dataSource_1",
+          "useFieldsInPopupInfo": true
         }
-      ],
-      "style": {
-        "border": {
-          "type": "solid",
-          "color": "var(--ref-palette-neutral-600)",
-          "width": "2px"
-        }
-      }
+      ]
     },
     "widget_7": {
       "uri": "widgets/layout/grid/",
@@ -876,7 +895,14 @@
           "mainDataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
           "rootDataSourceId": "dataSource_1"
         }
-      ]
+      ],
+      "style": {
+        "border": {
+          "type": "solid",
+          "color": "var(--ref-palette-neutral-600)",
+          "width": "2px"
+        }
+      }
     }
   },
   "widgetsManifest": {},
@@ -994,7 +1020,7 @@
       }
     }
   },
-  "timestamp": 1769925549046,
+  "timestamp": 1769989184768,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -1131,5 +1157,5 @@
       "LARGE": "60px"
     }
   },
-  "publishTimestamp": 1769925550957
+  "publishTimestamp": 1769989188335
 }
