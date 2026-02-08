@@ -1178,7 +1178,7 @@
       "version": "1.19.0",
       "label": "Text 2",
       "config": {
-        "text": "<p><strong style=\"font-size: 14px;\">﻿Radar Widget (NowCOAST Precip)</strong></p>",
+        "text": "<p><strong style=\"font-size: 14px;\">﻿Radar Widget (NWS Radar)</strong></p>",
         "placeholder": "<p><strong style=\"font-size: 14px;\">Title</strong></p>",
         "style": {
           "verticalAlign": "start",
@@ -1918,7 +1918,7 @@
       }
     }
   },
-  "timestamp": 1770519198125,
+  "timestamp": 1770523502686,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
