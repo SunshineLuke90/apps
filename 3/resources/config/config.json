@@ -929,7 +929,7 @@
       "version": "1.19.0",
       "label": "Text 3",
       "config": {
-        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up to provide a high refresh rate, low latency radar viewer widget, within an Experience Builder application.</span></p>",
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up to provide a high refresh rate, low latency radar viewer widget. Newly updated to show GOES Satellite imagery!</span></p>",
         "placeholder": "<p><span style=\"color: var(--light);\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>",
         "style": {
           "verticalAlign": "start",
@@ -1436,7 +1436,7 @@
       }
     }
   },
-  "timestamp": 1769222636929,
+  "timestamp": 1770586146528,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
