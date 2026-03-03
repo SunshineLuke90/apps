@@ -50,5 +50,31 @@
     "fileFormat": "image/png",
     "originalWidth": 1462,
     "originalHeight": 1110
+  },
+  "1772515023545": {
+    "originalName": "Screenshot 2026-03-02 at 11.16.47 PM.png",
+    "fileName": "1772515023545.png",
+    "size": 731989,
+    "url": "${appResourceUrl}/images/widget_90/1772515023545.png",
+    "created": 1772515023545,
+    "resourcesPrefix": "images/widget_90",
+    "referredIds": [],
+    "originId": "1772515023545",
+    "fileFormat": "image/png",
+    "originalWidth": 1674,
+    "originalHeight": 1020
+  },
+  "1772515153495": {
+    "originalName": "Screenshot 2026-03-02 at 11.19.04 PM.png",
+    "fileName": "1772515153495.png",
+    "size": 170312,
+    "url": "${appResourceUrl}/images/widget_95/1772515153495.png",
+    "created": 1772515153495,
+    "resourcesPrefix": "images/widget_95",
+    "referredIds": [],
+    "originId": "1772515153495",
+    "fileFormat": "image/png",
+    "originalWidth": 1044,
+    "originalHeight": 820
   }
 }

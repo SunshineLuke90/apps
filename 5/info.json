@@ -2,7 +2,7 @@
   "created": 1770586351588,
   "description": "",
   "id": "5",
-  "modified": 1772513099416,
+  "modified": 1772514954228,
   "owner": "SunshineLuke",
   "tags": [],
   "thumbnail": null,
@@ -15,12 +15,12 @@
     "JavaScript",
     "status: Published",
     "version:1.19.0",
-    "modified: 1772513092991",
+    "modified: 1772514953596",
     "publishVersion:1.19.0"
   ],
   "portalUrl": "https://SunshineGIS.maps.arcgis.com",
   "username": "SunshineLuke",
-  "name": "Untitled experience 1",
+  "name": "Markdown Printer",
   "isLocalApp": true,
   "url": null
 }

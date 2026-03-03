@@ -275,6 +275,19 @@
               "alignSelf": "center"
             }
           }
+        },
+        "4": {
+          "type": "WIDGET",
+          "widgetId": "widget_86",
+          "bbox": {
+            "width": "800px",
+            "height": "400px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            }
+          }
         }
       },
       "type": "COLUMN",
@@ -283,7 +296,8 @@
         "2",
         "1",
         "3",
-        "0"
+        "0",
+        "4"
       ]
     },
     "layout_8": {
@@ -337,7 +351,21 @@
         "0",
         "1",
         "2"
-      ]
+      ],
+      "setting": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10,
+              10,
+              5,
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      }
     },
     "layout_17": {
       "type": "FIXED",
@@ -561,6 +589,219 @@
             "height": 32
           },
           "widgetId": "widget_80",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false,
+            "autoProps": {
+              "right": false,
+              "left": true
+            }
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "label": "Default"
+    },
+    "layout_21": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_87",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 0,
+            "width": 4,
+            "height": 380
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_92",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 4,
+            "width": 4,
+            "height": 380
+          }
+        }
+      },
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "setting": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              5,
+              10,
+              10,
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "layout_22": {
+      "type": "FIXED",
+      "content": {
+        "4": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": 14,
+            "top": "62.1755%",
+            "bottom": 111,
+            "width": "90.00%",
+            "height": "10.0503%"
+          },
+          "widgetId": "widget_88",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "5": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": "5.0360%",
+            "top": "72.2257%",
+            "bottom": "3.9076%",
+            "width": "90.00%",
+            "height": "23.8693%"
+          },
+          "widgetId": "widget_89",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "6": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": "43.5307%",
+            "width": "100.0000%",
+            "height": "56.4693%"
+          },
+          "widgetId": "widget_90",
+          "setting": {}
+        },
+        "10": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "67.6259%",
+            "right": "4.70%",
+            "top": "51.3400%",
+            "bottom": "40.6198%",
+            "width": 105,
+            "height": 32
+          },
+          "widgetId": "widget_91",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false,
+            "autoProps": {
+              "right": false,
+              "left": true
+            }
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "4",
+        "5",
+        "6",
+        "10"
+      ],
+      "label": "Default"
+    },
+    "layout_23": {
+      "type": "FIXED",
+      "content": {
+        "4": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": 14,
+            "top": "62.1755%",
+            "bottom": 111,
+            "width": "90.00%",
+            "height": "10.0503%"
+          },
+          "widgetId": "widget_93",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false,
+            "lockLayout": true
+          },
+          "isPending": false
+        },
+        "5": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "5.00%",
+            "right": "5.0360%",
+            "top": "72.2257%",
+            "bottom": "3.9076%",
+            "width": "90.00%",
+            "height": "23.8693%"
+          },
+          "widgetId": "widget_94",
+          "setting": {
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "6": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": "43.5307%",
+            "width": "100.0000%",
+            "height": "56.4693%"
+          },
+          "widgetId": "widget_95",
+          "setting": {}
+        },
+        "10": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "67.6259%",
+            "right": "4.70%",
+            "top": "51.3400%",
+            "bottom": "40.6198%",
+            "width": 105,
+            "height": 32
+          },
+          "widgetId": "widget_96",
           "setting": {
             "vCenter": false,
             "hCenter": false,
@@ -1408,6 +1649,370 @@
         }
       },
       "id": "widget_80"
+    },
+    "widget_86": {
+      "uri": "widgets/layout/row/",
+      "version": "1.19.0",
+      "label": "Row 2",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_86",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_21"
+        }
+      }
+    },
+    "widget_87": {
+      "uri": "widgets/common/card/",
+      "version": "1.19.0",
+      "label": "Card 4",
+      "config": {
+        "DEFAULT": {
+          "enable": true,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            },
+            "borderRadius": {
+              "number": [
+                15,
+                15,
+                15,
+                15
+              ],
+              "unit": "px"
+            }
+          }
+        },
+        "HOVER": {
+          "enable": false,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "boxShadow": {
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "0px",
+              "spread": "0px",
+              "color": ""
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            }
+          }
+        },
+        "itemStyle": "STYLE3",
+        "direction": "Horizontal",
+        "isItemStyleConfirm": true,
+        "isOpenAdvabceSetting": false,
+        "isInitialed": true,
+        "transitionInfo": {
+          "transition": {
+            "type": "None",
+            "direction": "H"
+          },
+          "oneByOneEffect": null
+        }
+      },
+      "id": "widget_87",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_22"
+        }
+      }
+    },
+    "widget_88": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 9",
+      "config": {
+        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">Markdown Print Widget</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_88"
+    },
+    "widget_89": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 10",
+      "config": {
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, set up as a showcase for the rapid printing capabilities of the Markdown Print widget.</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_89"
+    },
+    "widget_90": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 5",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_90/1772515023545.png",
+            "originalUrl": "${appResourceUrl}/images/widget_90/1772515023545.png",
+            "fileName": "1772515023545.png",
+            "originalName": "Screenshot 2026-03-02 at 11.16.47 PM.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1772515023545",
+            "originalWidth": 1674,
+            "originalHeight": 1020
+          },
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_90"
+    },
+    "widget_91": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 5",
+      "config": {
+        "functionConfig": {
+          "text": "Open",
+          "textExpression": null,
+          "toolTip": "",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/mdprint",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "primary"
+          },
+          "useCustom": false,
+          "customStyle": {
+            "regular": {
+              "iconProps": {
+                "color": "",
+                "size": 14
+              }
+            },
+            "hover": {
+              "iconProps": {
+                "size": 14
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_91"
+    },
+    "widget_92": {
+      "uri": "widgets/common/card/",
+      "version": "1.19.0",
+      "label": "Card 5",
+      "config": {
+        "DEFAULT": {
+          "enable": true,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            },
+            "borderRadius": {
+              "number": [
+                15,
+                15,
+                15,
+                15
+              ],
+              "unit": "px"
+            }
+          }
+        },
+        "HOVER": {
+          "enable": false,
+          "backgroundStyle": {
+            "border": {
+              "type": "solid",
+              "color": "var(--sys-color-divider-secondary)",
+              "width": "1px"
+            },
+            "boxShadow": {
+              "offsetX": "0px",
+              "offsetY": "0px",
+              "blur": "0px",
+              "spread": "0px",
+              "color": ""
+            },
+            "background": {
+              "color": "",
+              "fillType": "fit",
+              "image": {
+                "url": ""
+              }
+            }
+          }
+        },
+        "itemStyle": "STYLE3",
+        "direction": "Horizontal",
+        "isItemStyleConfirm": true,
+        "isOpenAdvabceSetting": false,
+        "isInitialed": true,
+        "transitionInfo": {
+          "transition": {
+            "type": "None",
+            "direction": "H"
+          },
+          "oneByOneEffect": null
+        }
+      },
+      "id": "widget_92",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_23"
+        }
+      }
+    },
+    "widget_93": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 11",
+      "config": {
+        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿Slider Filter Widget</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_93"
+    },
+    "widget_94": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 12",
+      "config": {
+        "text": "<p><span style=\"color: var(--light);\">﻿This is an Experience Builder application, to showcase a Slider Filter widget, based off of the idea provided by </span><a href=\"https://community.esri.com/t5/arcgis-experience-builder-ideas/slider-filter-widget-for-dynamic-range-selection/idi-p/1681143\" target=\"_self\" data-uniqueid=\"8dc33c3f_0475_403c_debc_5270b2b71684\" data-dsid=\"\" data-link=\"%7B%22linkType%22%3A%22WEB_ADDRESS%22%2C%22openType%22%3A%22_self%22%2C%22value%22%3A%22https%3A%2F%2Fcommunity.esri.com%2Ft5%2Farcgis-experience-builder-ideas%2Fslider-filter-widget-for-dynamic-range-selection%2Fidi-p%2F1681143%22%2C%22expression%22%3Anull%7D\" style=\"color: var(--light);\">Jose Barrios</a></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true,
+          "color": ""
+        }
+      },
+      "id": "widget_94"
+    },
+    "widget_95": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image 6",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_95/1772515153495.png",
+            "originalUrl": "${appResourceUrl}/images/widget_95/1772515153495.png",
+            "fileName": "1772515153495.png",
+            "originalName": "Screenshot 2026-03-02 at 11.19.04 PM.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1772515153495",
+            "originalWidth": 1044,
+            "originalHeight": 820
+          },
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageDisplayQualityMode": "ORIGINAL"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_95"
+    },
+    "widget_96": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 6",
+      "config": {
+        "functionConfig": {
+          "text": "Open",
+          "textExpression": null,
+          "toolTip": "",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/slider-filter",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "primary"
+          },
+          "useCustom": false,
+          "customStyle": {
+            "regular": {
+              "iconProps": {
+                "color": "",
+                "size": 14
+              }
+            },
+            "hover": {
+              "iconProps": {
+                "size": 14
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_96"
     }
   },
   "widgetsManifest": {},
@@ -1428,7 +2033,7 @@
       }
     }
   },
-  "timestamp": 1770586146528,
+  "timestamp": 1772515299491,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -1557,5 +2162,5 @@
       }
     }
   },
-  "publishTimestamp": 1770586147610
+  "publishTimestamp": 1772515300170
 }
