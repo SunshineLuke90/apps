@@ -1,0 +1,597 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page",
+      "header": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "4.00px",
+            "right": "4.00px",
+            "top": "4.00px",
+            "bottom": "4.00px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "9.4%",
+            "right": "16.00px",
+            "top": "50%",
+            "bottom": "12.1%",
+            "width": "26.0%",
+            "height": "73.5%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": true,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "10.00px",
+            "right": "10.00px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "setting": {
+        "lockDescendants": true
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_3": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "width": "55.00px",
+            "height": "55.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "width": "360px",
+            "height": "59px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO",
+              "width": "STRETCH"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {
+            "width": "50.00px",
+            "height": "50px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "FLEX_ROW",
+      "label": "Default",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "exbVersion": "1.19.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/astro/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.19.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canSelect": true,
+          "canSelectState": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_2",
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/MDPrint/",
+      "version": "1.19.0",
+      "config": {
+        "markdown": "# ${eventName}\n_${eventDateStart | \"DDDD, MMM D YYYY @ h:mm A\"} - ${eventDateEnd | \"DDDD, MMM D YYYY @ h:mm A\"}_\n${eventDescription}\n_${personalNote}_",
+        "css": ".markdown-content {\n  font-family: 'Noto Sans', Arial, Helvetica, sans-serif !important;\n  color: #ccc;\n}\n\n.markdown-content h1 {\n  color: #0078d4;\n}\n\n.markdown-content a {\n  color: #0078d4;\n  text-decoration: none;\n}\n\n.markdown-content a:hover {\n  text-decoration: underline;\n}",
+        "PrintTemplates": [
+          {
+            "id": "widget_2-template-00abe2dd_af29_e1f8_772e_653f77bf30d4",
+            "label": "Template 1",
+            "markdown": "# ${description}\n\n| Event Name | Event Date |\n| ----------------- | ---------------- |${Query | https://services3.arcgis.com/SMmkLJuWWI7vDDUq/arcgis/rest/services/Lucius_and_Ryann_Valentines_2026/FeatureServer/0 | eventDateStart >= '${start | \"M/D/YY h:mm A\"}'}\n| ${eventName} | ${eventDateStart | \"M/D/YY h:mm A\"} |${/Query}\n\n\n${start | \"M/D/YY h:mm A\"}",
+            "css": "@charset \"utf-8\";\n\n/**\n * markdown.css\n *\n * This program is free software: you can redistribute it and/or modify it under\n * the terms of the GNU Lesser General Public License as published by the Free\n * Software Foundation, either version 3 of the License, or (at your option) any\n * later version.\n *\n * This program is distributed in the hope that it will be useful, but WITHOUT\n * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\n * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more\n * details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.\n *\n * @project      Weblog and Open Source Projects of Florian Wolters\n * @version      GIT: $Id$\n * @package      xhtml-css\n * @author       Florian Wolters <florian.wolters.85@googlemail.com>\n * @copyright    2012 Florian Wolters\n * @cssdoc       version 1.0-pre\n * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License\n * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme\n * @media        all\n * @valid        true\n */\n\nimg {\n\tmax-width: 100%;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 100%;\n}\n\ntable, th, td {\n\tborder: 1px solid #EAEAEA;\n\tborder-radius: 3px;\n\tpadding: 5px;\n}\n\ntr:nth-child(even) {\n\tbackground-color: #F8F8F8;\n}\n\nbody {\n    font-family: Helvetica, Arial, Freesans, clean, sans-serif;\npadding:1em;\nmargin:auto;\nmax-width:42em;\nbackground:#fefefe;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-weight: bold;\n}\n\nh1 {\n    color: #000000;\n    font-size: 28px;\n}\n\nh2 {\n    border-bottom: 1px solid #CCCCCC;\n    color: #000000;\n    font-size: 24px;\n}\n\nh3 {\n    font-size: 18px;\n}\n\nh4 {\n    font-size: 16px;\n}\n\nh5 {\n    font-size: 14px;\n}\n\nh6 {\n    color: #777777;\n    background-color: inherit;\n    font-size: 14px;\n}\n\nhr {\n    height: 0.2em;\n    border: 0;\n    color: #CCCCCC;\n    background-color: #CCCCCC;\n}\n\np, blockquote, ul, ol, dl, li, table, pre {\n    margin: 15px 0;\n}\n\ncode, pre {\n    border-radius: 3px;\n    background-color: #F8F8F8;\n    color: inherit;\n}\n\ncode {\n    border: 1px solid #EAEAEA;\n    margin: 0 2px;\n    padding: 0 5px;\n}\n\npre {\n    border: 1px solid #CCCCCC;\n    line-height: 1.25em;\n    overflow: auto;\n    padding: 6px 10px;\n}\n\npre > code {\n    border: 0;\n    margin: 0;\n    padding: 0;\n}\n\na, a:visited {\n    color: #4183C4;\n    background-color: inherit;\n    text-decoration: none;\n}\n",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_2-19ba3fc40c1-layer-2",
+                "mainDataSourceId": "dataSource_2-19ba3fc40c1-layer-2",
+                "rootDataSourceId": "dataSource_2"
+              }
+            ]
+          },
+          {
+            "id": "widget_2-template-e1104a0c_d497_c5de_c386_14f05ff9faac",
+            "label": "Template 2",
+            "markdown": "# Hello, World!\nThis is a print template.\n${label}",
+            "css": ".markdown-content {\n  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;\n  color: #333;\n}\n\n.markdown-content h1 {\n  color: #0078d4;\n}\n\n.markdown-content a {\n  color: #0078d4;\n  text-decoration: none;\n}\n\n.markdown-content a:hover {\n  text-decoration: underline;\n}",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_2-19bf80410db-layer-6",
+                "mainDataSourceId": "dataSource_2-19bf80410db-layer-6",
+                "rootDataSourceId": "dataSource_2"
+              }
+            ]
+          }
+        ]
+      },
+      "id": "widget_2",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-19c53892171-layer-1",
+          "mainDataSourceId": "dataSource_1-19c53892171-layer-1",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_6": {
+      "uri": "widgets/layout/flowrow/",
+      "version": "1.19.0",
+      "label": "Flow Row",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_6",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_7": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_7/1772512866500.png",
+            "originalUrl": "${appResourceUrl}/images/widget_7/1772512866500.png",
+            "fileName": "1772512866500.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1772512866500",
+            "originalWidth": 96,
+            "originalHeight": 96
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_7"
+    },
+    "widget_8": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text",
+      "config": {
+        "text": "<h5>Markdown Feature Reports</h5>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_8"
+    },
+    "widget_9": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15.29 6.208 8 1 .71 6.208a.5.5 0 1 0 .58.813L2 6.515V15h12V6.514l.71.507a.5.5 0 0 0 .58-.813M13 5.8 8 2.229 3 5.8V14h3v-4h4v4h3zM9 14H7v-3h2z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Home",
+                "originalName": "outlined/application/home.svg",
+                "path": [
+                  "generalAndArrows",
+                  "home"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "toolTip": "Return to Homepage",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "color": "rgba(48,48,48,0)"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_9",
+      "useDataSources": []
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+  },
+  "timestamp": 1772513092901,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#303030",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#212121",
+      "color": "#ffffff",
+      "link": "#c84ce6"
+    },
+    "button": {
+      "bg": "#2c2c2c",
+      "color": "#ffffff"
+    },
+    "logo": {
+      "small": "https://sunshinegis.maps.arcgis.com/sharing/rest/content/items/cb3555507eec46229eb8760b1f931e62/data",
+      "link": "https://luciuscreamer.com"
+    }
+  },
+  "mainLocale": "en",
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Valentines Day 2026",
+      "itemId": "e7687aed3c224a6d8d8454dd554adda6",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Events Map",
+      "itemId": "5e036a6bc96b40f1903b1f230e671de4",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "utilities": {
+    "utility_1": {
+      "id": "utility_1",
+      "type": "PRINTING",
+      "name": "printTask",
+      "label": "Printing",
+      "url": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+      "source": "org",
+      "orgSetting": {}
+    }
+  },
+  "customThemeOptions": {
+    "sys": {
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      },
+      "typography": {
+        "h1": {
+          "fontFamily": "Noto Sans"
+        },
+        "h2": {
+          "fontFamily": "Noto Sans"
+        },
+        "h3": {
+          "fontFamily": "Noto Sans"
+        },
+        "h4": {
+          "fontFamily": "Noto Sans"
+        },
+        "h5": {
+          "fontFamily": "Noto Sans"
+        },
+        "h6": {
+          "fontFamily": "Noto Sans"
+        },
+        "title1": {
+          "fontFamily": "Noto Sans"
+        },
+        "title2": {
+          "fontFamily": "Noto Sans"
+        },
+        "title3": {
+          "fontFamily": "Noto Sans"
+        },
+        "inputField": {
+          "fontFamily": "Noto Sans"
+        },
+        "body": {
+          "fontFamily": "Noto Sans"
+        },
+        "label1": {
+          "fontFamily": "Noto Sans"
+        },
+        "label2": {
+          "fontFamily": "Noto Sans"
+        },
+        "label3": {
+          "fontFamily": "Noto Sans"
+        }
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    },
+    "ref": {
+      "typeface": {
+        "customFonts": [
+          {
+            "name": "Noto Sans",
+            "url": "https://fonts.googleapis.com/css2?family=Noto+Sans"
+          }
+        ]
+      }
+    }
+  },
+  "customTheme": {},
+  "header": {
+    "layout": {
+      "LARGE": "layout_2"
+    },
+    "height": {
+      "LARGE": "60px"
+    }
+  },
+  "publishTimestamp": 1772513099413
+}

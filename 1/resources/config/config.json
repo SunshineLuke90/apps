@@ -903,7 +903,7 @@
     },
     "widget_2": {
       "uri": "widgets/new-radar/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "New Radar",
       "config": {
         "exampleConfigProperty": "test",
@@ -1072,7 +1072,9 @@
             "openType": "_self",
             "value": "https://exb.luciuscreamer.com",
             "expression": null
-          }
+          },
+          "toolTip": "Return to Homepage",
+          "toolTipExpression": null
         },
         "styleConfig": {
           "themeStyle": {
@@ -1486,7 +1488,7 @@
     },
     "widget_21": {
       "uri": "widgets/new-radar/",
-      "version": "1.18.0",
+      "version": "1.19.0",
       "label": "New Radar 2",
       "config": {
         "exampleConfigProperty": "test",
@@ -1918,7 +1920,7 @@
       }
     }
   },
-  "timestamp": 1770523502686,
+  "timestamp": 1772513068367,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",

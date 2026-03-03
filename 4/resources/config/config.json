@@ -886,7 +886,8 @@
         "startDateField": "start",
         "endDateField": "endtime",
         "allDayField": "allday",
-        "descriptionField": "description"
+        "descriptionField": "description",
+        "maxEventCount": 2
       },
       "id": "widget_16",
       "useMapWidgetIds": [
@@ -1023,7 +1024,7 @@
       }
     }
   },
-  "timestamp": 1772313706552,
+  "timestamp": 1772510573072,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",

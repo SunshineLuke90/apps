@@ -1,0 +1,684 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page",
+      "header": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "4.00px",
+            "right": "4.00px",
+            "top": "4.00px",
+            "bottom": "4.00px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_11",
+          "bbox": {
+            "left": "16.00px",
+            "right": "68.1%",
+            "top": "72.2%",
+            "bottom": "24.00px",
+            "width": "60.00%",
+            "height": "21.1%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false,
+              "height": "AUTO"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "2"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "10.00px",
+            "right": "10.00px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "setting": {
+        "lockDescendants": true
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_3": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "width": "55.00px",
+            "height": "55.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "width": "360px",
+            "height": "59px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO",
+              "width": "STRETCH"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {
+            "width": "50.00px",
+            "height": "50px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "FLEX_ROW",
+      "label": "Default",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "layout_4": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_10",
+          "bbox": {
+            "width": "300px",
+            "height": "90px"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {
+            "width": "98.00%",
+            "height": "70px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO",
+              "width": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "1",
+        "0"
+      ],
+      "setting": {
+        "space": 0
+      }
+    }
+  },
+  "exbVersion": "1.19.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/astro/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "5",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.19.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canSelect": true,
+          "canSelectState": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_3",
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3",
+          "mainDataSourceId": "dataSource_3"
+        }
+      ]
+    },
+    "widget_6": {
+      "uri": "widgets/layout/flowrow/",
+      "version": "1.19.0",
+      "label": "Flow Row",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_6",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_7": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_7/1772512866500.png",
+            "originalUrl": "${appResourceUrl}/images/widget_7/1772512866500.png",
+            "fileName": "1772512866500.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1772512866500",
+            "originalWidth": 96,
+            "originalHeight": 96
+          },
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imgSourceType": "",
+          "srcExpression": null
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_7"
+    },
+    "widget_8": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text",
+      "config": {
+        "text": "<h5>Slider Filter</h5>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_8"
+    },
+    "widget_9": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15.29 6.208 8 1 .71 6.208a.5.5 0 1 0 .58.813L2 6.515V15h12V6.514l.71.507a.5.5 0 0 0 .58-.813M13 5.8 8 2.229 3 5.8V14h3v-4h4v4h3zM9 14H7v-3h2z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Home",
+                "originalName": "outlined/application/home.svg",
+                "path": [
+                  "generalAndArrows",
+                  "home"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "toolTip": "Return to Homepage",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "color": "rgba(48,48,48,0)"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_9",
+      "useDataSources": []
+    },
+    "widget_10": {
+      "uri": "widgets/slider-filter/",
+      "version": "1.19.0",
+      "label": "Slider Filter",
+      "config": {
+        "showTicks": false,
+        "showCurrentValue": true,
+        "minLabel": "2,000",
+        "maxLabel": "1,000,000",
+        "startColor": "#b9c200",
+        "endColor": "#ec0707",
+        "minLabelPosition": "BOTTOM",
+        "maxLabelPosition": "BOTTOM",
+        "rangeType": "NUMBER",
+        "minValue": 1973,
+        "maxValue": 1004125
+      },
+      "id": "widget_10",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3-198bfdfee04-layer-9",
+          "mainDataSourceId": "dataSource_3-198bfdfee04-layer-9",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "P0010001"
+          ]
+        }
+      ]
+    },
+    "widget_11": {
+      "uri": "widgets/layout/column/",
+      "version": "1.19.0",
+      "label": "Column",
+      "config": {
+        "space": {
+          "distance": 0,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_11",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_4"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "var(--ref-palette-neutral-1100)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        },
+        "textColor": "var(--ref-palette-neutral-100)",
+        "borderRadius": {
+          "number": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "unit": "px"
+        }
+      }
+    },
+    "widget_12": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 2",
+      "config": {
+        "text": "<h6>County population</h6>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_12"
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+  },
+  "timestamp": 1772514108683,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#303030",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#212121",
+      "color": "#ffffff",
+      "link": "#c84ce6"
+    },
+    "button": {
+      "bg": "#2c2c2c",
+      "color": "#ffffff"
+    },
+    "logo": {
+      "small": "https://sunshinegis.maps.arcgis.com/sharing/rest/content/items/cb3555507eec46229eb8760b1f931e62/data",
+      "link": "https://luciuscreamer.com"
+    }
+  },
+  "mainLocale": "en",
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Valentines Day 2026",
+      "itemId": "e7687aed3c224a6d8d8454dd554adda6",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Events Map",
+      "itemId": "5e036a6bc96b40f1903b1f230e671de4",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "id": "dataSource_3",
+      "type": "WEB_MAP",
+      "sourceLabel": "Population Demographics",
+      "itemId": "83e20099377244d3b995de9e6a35ee37",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "utilities": {
+    "utility_1": {
+      "id": "utility_1",
+      "type": "PRINTING",
+      "name": "printTask",
+      "label": "Printing",
+      "url": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+      "source": "org",
+      "orgSetting": {}
+    }
+  },
+  "customThemeOptions": {
+    "sys": {
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      },
+      "typography": {
+        "h1": {
+          "fontFamily": "Noto Sans"
+        },
+        "h2": {
+          "fontFamily": "Noto Sans"
+        },
+        "h3": {
+          "fontFamily": "Noto Sans"
+        },
+        "h4": {
+          "fontFamily": "Noto Sans"
+        },
+        "h5": {
+          "fontFamily": "Noto Sans"
+        },
+        "h6": {
+          "fontFamily": "Noto Sans"
+        },
+        "title1": {
+          "fontFamily": "Noto Sans"
+        },
+        "title2": {
+          "fontFamily": "Noto Sans"
+        },
+        "title3": {
+          "fontFamily": "Noto Sans"
+        },
+        "inputField": {
+          "fontFamily": "Noto Sans"
+        },
+        "body": {
+          "fontFamily": "Noto Sans"
+        },
+        "label1": {
+          "fontFamily": "Noto Sans"
+        },
+        "label2": {
+          "fontFamily": "Noto Sans"
+        },
+        "label3": {
+          "fontFamily": "Noto Sans"
+        }
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    },
+    "ref": {
+      "typeface": {
+        "customFonts": [
+          {
+            "name": "Noto Sans",
+            "url": "https://fonts.googleapis.com/css2?family=Noto+Sans"
+          }
+        ]
+      }
+    }
+  },
+  "customTheme": {},
+  "header": {
+    "layout": {
+      "LARGE": "layout_2"
+    },
+    "height": {
+      "LARGE": "60px"
+    }
+  },
+  "publishTimestamp": 1772514109982
+}
