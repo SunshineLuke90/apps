@@ -5,13 +5,13 @@ on:
     branches:
       - main
     paths:
-      - '3/**'
-      - '!1/**'
-      - '!2/**'
-      - '!0/**'
-      - '!4/**'
-      - '!azure-pipelines.yml'
-      - '!README.md'
+      - "3/**"
+      - "!1/**"
+      - "!2/**"
+      - "!0/**"
+      - "!4/**"
+      - "!azure-pipelines.yml"
+      - "!README.md"
 
 jobs:
   Build_and_Deploy:
@@ -22,7 +22,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
+          node-version: "22.x"
 
       - name: Download Experience Builder
         shell: pwsh
