@@ -1,0 +1,104 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '3/**'
+      - '!1/**'
+      - '!2/**'
+      - '!0/**'
+      - '!4/**'
+      - '!azure-pipelines.yml'
+      - '!README.md'
+
+jobs:
+  Build_and_Deploy:
+    name: "Build and Deploy"
+    runs-on: windows-latest
+
+    steps:
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Download Experience Builder
+        shell: pwsh
+        run: |
+          $jsonResponse = Invoke-RestMethod -Uri 'https://downloads.arcgis.com/dms/rest/download/secured/arcgis-experience-builder-1.19.zip?f=json&folder=software%2FExperienceBuilder%2F1.19'
+          Invoke-WebRequest -Uri $jsonResponse.url -OutFile exb.zip
+
+      - name: Unzip Experience Builder
+        shell: pwsh
+        run: Expand-Archive -Path exb.zip -DestinationPath exb -Force
+
+      - name: Checkout widgets
+        uses: actions/checkout@v4
+        with:
+          repository: SunshineLuke90/widgets
+          path: exb/client/your-extensions/widgets
+
+      - name: Create App directory
+        shell: pwsh
+        run: New-Item -ItemType Directory -Path "exb/server/public/apps" -Force
+
+      - name: Clone apps to app directory
+        uses: actions/checkout@v4
+        with:
+          repository: SunshineLuke90/apps
+          path: exb/server/public/apps
+
+      - name: NPM install in server folder
+        run: npm ci
+        working-directory: exb/server
+
+      - name: NPM install in client folder
+        run: npm ci
+        working-directory: exb/client
+
+      - name: Build widgets - dev
+        run: npm run build:dev
+        working-directory: exb/client
+
+      - name: Build widgets
+        run: npm run build:prod
+        working-directory: exb/client
+
+      - name: Delete old app.zip
+        shell: pwsh
+        run: Remove-Item -Path "exb/app.zip" -Force -ErrorAction SilentlyContinue
+
+      - name: Run download script
+        shell: pwsh
+        working-directory: exb
+        env:
+          NODE_ENV: production
+        run: |
+          node -e "require('./server/src/middlewares/dev/apps/app-download.js').zipApp('3', 'app.zip', 'WeW1dajKocDIqUdq')
+            .then(() => { 
+              console.log('--- SCRIPT COMPLETED SUCCESSFULLY ---'); 
+              process.exit(0); 
+            })
+            .catch(err => { 
+              console.error('--- SCRIPT FAILED WITH AN ERROR ---'); 
+              console.error(err); 
+              process.exit(1); 
+            });"
+
+      - name: List exb contents
+        shell: pwsh
+        working-directory: exb
+        run: ls
+
+      - name: Unzip app zip
+        shell: pwsh
+        working-directory: exb
+        run: Expand-Archive -Path app.zip -DestinationPath app -Force
+
+      - name: Upload Artifact for Deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: app
+          path: exb/app
