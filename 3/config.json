@@ -811,13 +811,36 @@
             }
           },
           "isPending": false
+        },
+        "11": {
+          "type": "WIDGET",
+          "widgetId": "widget_97",
+          "bbox": {
+            "left": "8.00px",
+            "right": "40.3%",
+            "top": "8.00px",
+            "bottom": "68.1%",
+            "width": "59.7%",
+            "height": "9.7%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true,
+              "width": "AUTO",
+              "height": "AUTO"
+            }
+          }
         }
       },
       "order": [
         "4",
         "5",
         "6",
-        "10"
+        "10",
+        "11"
       ],
       "label": "Default"
     }
@@ -1923,7 +1946,7 @@
       "version": "1.19.0",
       "label": "Text 11",
       "config": {
-        "text": "<p><span style=\"font-size: 20px; color: var(--light);\">﻿Slider Filter Widget</span></p>",
+        "text": "<p><span style=\"color: var(--light); font-size: 20px;\">﻿Slider Filter Widget <span class=\"ql-cursor\">﻿</span></span></p>",
         "style": {
           "verticalAlign": "start",
           "wrap": true,
@@ -2013,6 +2036,36 @@
         }
       },
       "id": "widget_96"
+    },
+    "widget_97": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 13",
+      "config": {
+        "text": "<p><strong style=\"font-size: 16px;\">Featured by Esri!</strong></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_97",
+      "style": {
+        "background": {
+          "color": "var(--ref-palette-neutral-1100)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        },
+        "textColor": "var(--ref-palette-neutral-100)",
+        "border": {
+          "type": "solid",
+          "color": "var(--mixin-shared-theme-body-link)",
+          "width": "1px"
+        },
+        "boxShadow": {
+          "presetStyle": "shadow-2"
+        }
+      }
     }
   },
   "widgetsManifest": {},
@@ -2033,7 +2086,7 @@
       }
     }
   },
-  "timestamp": 1772515299491,
+  "timestamp": 1773240583938,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -2162,5 +2215,5 @@
       }
     }
   },
-  "publishTimestamp": 1772515300170
+  "publishTimestamp": 1773240587796
 }
