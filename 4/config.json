@@ -834,15 +834,16 @@
                 "color": "#f45757"
               }
             ],
+            "descriptionField": "description",
+            "colorsetField": "eventImpact",
+            "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
             "useDataSources": [
               {
                 "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
                 "mainDataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
                 "rootDataSourceId": "dataSource_1"
               }
-            ],
-            "descriptionField": "description",
-            "colorsetField": "eventImpact"
+            ]
           },
           {
             "id": "ds_2763c45d_461f_94f4_a098_4cb30adfd151",
@@ -869,14 +870,15 @@
                 "color": "#ac1130"
               }
             ],
+            "colorsetField": "eventImpact",
+            "dataSourceId": "dataSource_1-19bf80410db-layer-6",
             "useDataSources": [
               {
                 "dataSourceId": "dataSource_1-19bf80410db-layer-6",
                 "mainDataSourceId": "dataSource_1-19bf80410db-layer-6",
                 "rootDataSourceId": "dataSource_1"
               }
-            ],
-            "colorsetField": "eventImpact"
+            ]
           }
         ],
         "labelField": "label",
@@ -894,6 +896,11 @@
         {
           "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
           "mainDataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
+          "rootDataSourceId": "dataSource_1"
+        },
+        {
+          "dataSourceId": "dataSource_1-19bf80410db-layer-6",
+          "mainDataSourceId": "dataSource_1-19bf80410db-layer-6",
           "rootDataSourceId": "dataSource_1"
         }
       ],
@@ -1021,7 +1028,7 @@
       }
     }
   },
-  "timestamp": 1772510573072,
+  "timestamp": 1774675121998,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
@@ -1158,5 +1165,5 @@
       "LARGE": "60px"
     }
   },
-  "publishTimestamp": 1772511334725
+  "publishTimestamp": 1774675122695
 }

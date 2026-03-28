@@ -839,7 +839,14 @@
             ],
             "descriptionField": "description",
             "colorsetField": "eventImpact",
-            "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2"
+            "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
+                "mainDataSourceId": "dataSource_1-19ba3fc40c1-layer-2",
+                "rootDataSourceId": "dataSource_1"
+              }
+            ]
           },
           {
             "id": "ds_2763c45d_461f_94f4_a098_4cb30adfd151",
@@ -867,7 +874,14 @@
               }
             ],
             "colorsetField": "eventImpact",
-            "dataSourceId": "dataSource_1-19bf80410db-layer-6"
+            "dataSourceId": "dataSource_1-19bf80410db-layer-6",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-19bf80410db-layer-6",
+                "mainDataSourceId": "dataSource_1-19bf80410db-layer-6",
+                "rootDataSourceId": "dataSource_1"
+              }
+            ]
           }
         ],
         "labelField": "label",
@@ -1017,7 +1031,7 @@
       }
     }
   },
-  "timestamp": 1774578027574,
+  "timestamp": 1774675121998,
   "sharedThemeVariables": {
     "header": {
       "bg": "#303030",
