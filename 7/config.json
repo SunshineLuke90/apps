@@ -1,0 +1,2637 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Public ISD",
+      "header": true
+    },
+    "page_2": {
+      "id": "page_2",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_11"
+      },
+      "isDefault": false,
+      "isVisible": true,
+      "label": "Internal ISD",
+      "header": true,
+      "footer": false
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "hCenter": false,
+            "vCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_2": {
+      "type": "GRID",
+      "order": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "width": 25.409999999999997
+          },
+          "parent": "7",
+          "gridType": 3,
+          "setting": {},
+          "widgetId": "widget_3",
+          "expandable": false
+        },
+        "3": {
+          "type": "WIDGET",
+          "bbox": {
+            "width": 67.98666666666668
+          },
+          "parent": "4",
+          "gridType": 3,
+          "widgetId": "widget_2"
+        },
+        "4": {
+          "gridType": 0,
+          "bbox": {
+            "width": 100
+          },
+          "children": [
+            "7",
+            "3"
+          ]
+        },
+        "7": {
+          "gridType": 1,
+          "parent": "4",
+          "bbox": {
+            "width": 32.013333333333335
+          },
+          "children": [
+            "8",
+            "10",
+            "1",
+            "9"
+          ]
+        },
+        "8": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": false,
+          "parent": "7",
+          "bbox": {
+            "width": 24.810000000000002
+          },
+          "widgetId": "widget_41"
+        },
+        "9": {
+          "gridType": 3,
+          "type": "WIDGET",
+          "expandable": false,
+          "parent": "7",
+          "bbox": {
+            "width": 25
+          },
+          "widgetId": "widget_4"
+        },
+        "10": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "gridType": 3,
+          "parent": "7",
+          "bbox": {
+            "width": 24.78
+          },
+          "expandable": false
+        }
+      },
+      "setting": {
+        "rootItem": "4",
+        "style": {
+          "padding": {
+            "number": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "label": "Default"
+    },
+    "layout_3": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    },
+    "layout_5": {
+      "type": "FIXED",
+      "order": [
+        "5"
+      ],
+      "content": {
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      }
+    },
+    "layout_6": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "width": "344px",
+            "height": "44.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO",
+              "width": "STRETCH"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "width": "60.00px",
+            "height": "60.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_42",
+          "bbox": {
+            "width": "50.00px",
+            "height": "50px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "FLEX_ROW",
+      "order": [
+        "1",
+        "0",
+        "2"
+      ],
+      "label": "Default",
+      "setting": {
+        "padding": {
+          "number": [
+            0,
+            10,
+            0,
+            10
+          ],
+          "unit": "px"
+        },
+        "space": 10
+      }
+    },
+    "layout_7": {
+      "type": "FIXED",
+      "content": {
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {
+            "left": "10.00px",
+            "right": "50.00px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "3"
+      ]
+    },
+    "layout_8": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {
+            "width": "80.00px",
+            "height": "36px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "width": "237px",
+            "height": "54px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "STRETCH",
+              "height": "AUTO"
+            },
+            "style": {
+              "alignSelf": "center"
+            }
+          }
+        }
+      },
+      "type": "FLEX_ROW",
+      "order": [
+        "0",
+        "1"
+      ],
+      "label": "Default"
+    },
+    "layout_11": {
+      "type": "FIXED",
+      "content": {
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_29",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "2"
+      ]
+    },
+    "layout_13": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_20",
+          "bbox": {
+            "width": "300px",
+            "height": "400px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_21",
+          "bbox": {
+            "width": "300px",
+            "height": "400px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_22",
+          "bbox": {
+            "width": "300px",
+            "height": "400px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_23",
+          "bbox": {
+            "width": "300px",
+            "height": "400px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        }
+      },
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "0",
+        "3",
+        "2",
+        "1"
+      ],
+      "setting": {
+        "space": 8
+      }
+    },
+    "layout_15": {
+      "content": {},
+      "type": "COLUMN",
+      "label": "Default",
+      "setting": {
+        "space": 8
+      }
+    },
+    "layout_16": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_24",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_27",
+          "bbox": {
+            "left": "26.7%",
+            "right": "0.0%",
+            "top": "0.00%",
+            "bottom": "26.3%",
+            "width": "30.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_17": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Default"
+    },
+    "layout_18": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_37",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_38",
+          "bbox": {
+            "left": "44.7%",
+            "right": "0.00%",
+            "top": "0.00%",
+            "bottom": "72.7%",
+            "width": "30.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_40",
+          "bbox": {
+            "left": "44.7%",
+            "right": "30.00px",
+            "top": "0.00px",
+            "bottom": "72.7%",
+            "width": "30.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0",
+        "2",
+        "1"
+      ]
+    },
+    "layout_19": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_31",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_34",
+          "bbox": {
+            "left": "10.6%",
+            "right": "0.0%",
+            "top": "0.00%",
+            "bottom": "43.7%",
+            "width": "30.00px",
+            "height": "30.00px"
+          },
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_20": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_25",
+          "bbox": {
+            "width": "223px",
+            "height": "70px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_26",
+          "bbox": {
+            "width": "300px",
+            "height": "53px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        }
+      },
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "setting": {
+        "space": 0
+      }
+    },
+    "layout_22": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_17",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 0,
+            "width": 3,
+            "height": 251.8671875
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_30",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 3,
+            "width": 6,
+            "height": "252px"
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_19",
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          },
+          "bbox": {
+            "left": 9,
+            "width": 3,
+            "height": "252px"
+          }
+        }
+      },
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "setting": {
+        "space": 8,
+        "style": {
+          "padding": {
+            "number": [
+              8,
+              8,
+              8,
+              8
+            ],
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "layout_23": {
+      "content": {},
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    },
+    "layout_24": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_32",
+          "bbox": {
+            "width": "129px",
+            "height": "70px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "AUTO"
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_33",
+          "bbox": {
+            "width": "129px",
+            "height": "167px"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "STRETCH"
+            }
+          }
+        }
+      },
+      "type": "COLUMN",
+      "label": "Default",
+      "order": [
+        "0",
+        "1"
+      ],
+      "setting": {
+        "space": 0
+      }
+    },
+    "layout_25": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_35",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ],
+      "setting": {
+        "lockDescendants": true
+      }
+    },
+    "layout_26": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_36",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ],
+      "setting": {
+        "lockDescendants": true
+      }
+    }
+  },
+  "exbVersion": "1.19.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/astro/",
+  "forBuilderAttributes": {
+    "lockLayout": false,
+    "viewPortSize": {
+      "LARGE": {
+        "width": 1024,
+        "height": 768
+      }
+    }
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/grid/",
+      "version": "1.19.0",
+      "label": "Grid",
+      "config": {},
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.19.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": true,
+        "initialMapDataSourceID": "dataSource_2",
+        "initialMapState": {
+          "viewPoint": {
+            "rotation": 0,
+            "scale": 9244648.868618,
+            "targetGeometry": {
+              "spatialReference": {
+                "latestWkid": 3857,
+                "wkid": 102100
+              },
+              "x": -11123837.286780983,
+              "y": 5057117.315716563
+            }
+          },
+          "extent": {
+            "spatialReference": {
+              "latestWkid": 3857,
+              "wkid": 102100
+            },
+            "xmin": -11664399.950813606,
+            "ymin": 4507993.704516003,
+            "xmax": -10583274.62274836,
+            "ymax": 5606240.926917123
+          },
+          "rotation": 0,
+          "viewType": "2d"
+        },
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_2",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_3"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        }
+      ],
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "FixedValue",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "Current View",
+        "topTextColor": "#ff8300",
+        "topTextMaxSize": "x-small",
+        "middleText": "{calculated/value} hotspots",
+        "middleTextColor": "#ff8300",
+        "middleTextMaxSize": "medium",
+        "bottomText": "",
+        "bottomTextColor": "#000000",
+        "bottomTextMaxSize": "medium",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "mainStatisticType": "count",
+        "valueUnitPrefix": true,
+        "refFixedValue": 500,
+        "conditionalFormat": true,
+        "middleTextBelow": "{calculated/value} hotspots",
+        "topTextBelow": "Current View",
+        "topTextColorBelow": "#ffffff",
+        "middleTextColorBelow": "#ffffff"
+      },
+      "id": "widget_3",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "mainDataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "OBJECTID"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      ]
+    },
+    "widget_4": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 2",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "none",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "Avg Hotspot Confidence",
+        "topTextColor": "#ffffff",
+        "topTextMaxSize": "medium",
+        "middleText": "{calculated/value}%",
+        "middleTextColor": "#ffffff",
+        "middleTextMaxSize": "medium",
+        "bottomText": "",
+        "bottomTextColor": "#000000",
+        "bottomTextMaxSize": "medium",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "mainStatisticType": "avg"
+      },
+      "id": "widget_4",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "mainDataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "CONFIDENCE"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "mainDataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      ]
+    },
+    "widget_6": {
+      "uri": "widgets/layout/flowrow/",
+      "version": "1.19.0",
+      "label": "Flow Row",
+      "config": {
+        "space": {
+          "distance": 10,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "number": [
+              0,
+              10,
+              0,
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_6",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_6"
+        }
+      }
+    },
+    "widget_7": {
+      "uri": "widgets/common/image/",
+      "version": "1.19.0",
+      "label": "Image",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {
+            "url": "${appResourceUrl}/images/widget_7/1774228442047.png",
+            "originalUrl": "${appResourceUrl}/images/widget_7/1774228442047.png",
+            "fileName": "1774228442047.png",
+            "originalName": "favicon-96x96.png",
+            "imgSourceType": "BY_UPLOAD",
+            "fileFormat": "image/png",
+            "originalId": "1774228442047",
+            "originalWidth": 96,
+            "originalHeight": 96
+          },
+          "imgSourceType": "",
+          "srcExpression": null,
+          "imageDisplayQualityMode": "ORIGINAL",
+          "imageFillMode": "FIT"
+        },
+        "styleConfig": {}
+      },
+      "id": "widget_7",
+      "style": {
+        "background": {
+          "image": {
+            "url": ""
+          },
+          "color": ""
+        },
+        "borderRadius": {
+          "number": [
+            3
+          ],
+          "unit": "px"
+        }
+      }
+    },
+    "widget_8": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text",
+      "config": {
+        "text": "<h5>Wildfire Status</h5>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true
+        }
+      },
+      "id": "widget_8"
+    },
+    "widget_9": {
+      "uri": "widgets/layout/flowrow/",
+      "version": "1.19.0",
+      "label": "Flow Row 2",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_9",
+      "layouts": {
+        "DEFAULT": {
+          "SMALL": "layout_8"
+        }
+      }
+    },
+    "widget_12": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 3",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "Statistic",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "New Fires",
+        "topTextColor": "#ffffff",
+        "topTextMaxSize": "small",
+        "middleText": "{calculated/value}",
+        "middleTextColor": "#ffffff",
+        "middleTextMaxSize": "x-large",
+        "bottomText": "Avg {calculated/reference}% contained",
+        "bottomTextColor": "#ffffff",
+        "bottomTextMaxSize": "medium",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "indQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "FireDiscoveryDateTime",
+              "operator": "DATE_OPERATOR_IS_IN_THE_LAST",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "USER_INPUT",
+                "inputEditor": "NUMBER_LIST_SELECTOR",
+                "value": [
+                  {
+                    "value": 1,
+                    "label": "DAY"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "FireDiscoveryDateTime BETWEEN CURRENT_TIMESTAMP - 1 AND CURRENT_TIMESTAMP",
+          "displaySQL": "(Fire Discovery Date Time is in the last 1 (Amount) Day (Unit))"
+        },
+        "mainStatisticType": "count",
+        "refQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "FireDiscoveryDateTime",
+              "operator": "DATE_OPERATOR_IS_IN_THE_LAST",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "USER_INPUT",
+                "inputEditor": "NUMBER_LIST_SELECTOR",
+                "value": [
+                  {
+                    "value": 1,
+                    "label": "DAY"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "FireDiscoveryDateTime BETWEEN CURRENT_TIMESTAMP - 1 AND CURRENT_TIMESTAMP",
+          "displaySQL": "(Fire Discovery Date Time is in the last 1 (Amount) Day (Unit))"
+        },
+        "refStatisticType": "avg"
+      },
+      "id": "widget_12",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "OBJECTID"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "PercentContained"
+          ]
+        }
+      ],
+      "style": {
+        "background": {
+          "color": "var(--ref-palette-neutral-100)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        },
+        "textColor": "var(--ref-palette-neutral-1200)"
+      }
+    },
+    "widget_17": {
+      "uri": "widgets/layout/column/",
+      "version": "1.19.0",
+      "label": "Column 2",
+      "config": {
+        "space": {
+          "distance": 8,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_17",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_13"
+        }
+      }
+    },
+    "widget_19": {
+      "uri": "widgets/layout/column/",
+      "version": "1.19.0",
+      "label": "Column 3",
+      "config": {
+        "space": {
+          "distance": 8,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_19",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_15"
+        }
+      }
+    },
+    "widget_20": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.19.0",
+      "label": "Fixed Panel 2",
+      "config": null,
+      "id": "widget_20",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_16"
+        }
+      },
+      "style": {
+        "border": {
+          "type": "dashed",
+          "width": "0px"
+        },
+        "borderRadius": {
+          "number": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "unit": "px"
+        }
+      }
+    },
+    "widget_21": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.19.0",
+      "label": "Fixed Panel 3",
+      "config": null,
+      "id": "widget_21",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_17"
+        }
+      }
+    },
+    "widget_22": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.19.0",
+      "label": "Fixed Panel 4",
+      "config": null,
+      "id": "widget_22",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_18"
+        }
+      }
+    },
+    "widget_23": {
+      "uri": "widgets/layout/fixed/",
+      "version": "1.19.0",
+      "label": "Fixed Panel 5",
+      "config": null,
+      "id": "widget_23",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_19"
+        }
+      },
+      "style": {
+        "borderRadius": {
+          "number": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "unit": "px"
+        }
+      }
+    },
+    "widget_24": {
+      "uri": "widgets/layout/column/",
+      "version": "1.19.0",
+      "label": "Column 4",
+      "config": {
+        "space": {
+          "distance": 0,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_24",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_20"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "var(--ref-palette-neutral-100)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        },
+        "textColor": "var(--ref-palette-neutral-1200)"
+      }
+    },
+    "widget_25": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 3",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><strong style=\"font-size: 20px;\">Low Flow</strong></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_25"
+    },
+    "widget_26": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 4",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "none",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "",
+        "topTextColor": "#000000",
+        "topTextMaxSize": "medium",
+        "middleText": "{calculated/value}",
+        "middleTextColor": "#000000",
+        "middleTextMaxSize": "medium",
+        "bottomText": "",
+        "bottomTextColor": "#000000",
+        "bottomTextMaxSize": "medium",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "indQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "status",
+              "operator": "STRING_OPERATOR_IS",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "UNIQUE",
+                "inputEditor": "SIMPLE_SELECT",
+                "value": [
+                  {
+                    "value": "Low Flow",
+                    "label": "Low Flow"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "status = 'Low Flow'",
+          "displaySQL": "(Current Status = 'Low Flow')"
+        },
+        "mainStatisticType": "count"
+      },
+      "id": "widget_26",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "OBJECTID"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_27": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 2",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5\"></path><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Info",
+                "originalName": "outlined/suggested/info.svg",
+                "path": [
+                  "generalAndArrows",
+                  "info"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "linkParam": {
+            "linkType": "DIALOG",
+            "value": "dialog_1"
+          },
+          "toolTip": "About Low Flow",
+          "toolTipExpression": null
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0.16)",
+                "fillType": "fill"
+              }
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "type": "solid",
+                "color": "rgba(48,48,48,0)",
+                "width": "0px"
+              },
+              "borderRadius": {
+                "number": [
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_27",
+      "useDataSources": []
+    },
+    "widget_29": {
+      "uri": "widgets/layout/row/",
+      "version": "1.19.0",
+      "label": "Row",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_29",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_22"
+        }
+      }
+    },
+    "widget_30": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.19.0",
+      "label": "Map 3",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_30",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_23"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_31": {
+      "uri": "widgets/layout/column/",
+      "version": "1.19.0",
+      "label": "Column 5",
+      "config": {
+        "space": {
+          "distance": 0,
+          "unit": "px"
+        },
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch"
+        }
+      },
+      "id": "widget_31",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_24"
+        }
+      },
+      "style": {
+        "background": {
+          "color": "var(--ref-palette-neutral-100)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        },
+        "textColor": "var(--ref-palette-neutral-1200)"
+      }
+    },
+    "widget_32": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 4",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><strong style=\"font-size: 20px;\">No Flooding</strong></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_32"
+    },
+    "widget_33": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 5",
+      "config": {
+        "indType": "Feature",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "Feature",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "",
+        "topTextColor": "#000000",
+        "topTextMaxSize": "medium",
+        "middleText": "{calculated/value} V",
+        "middleTextColor": "#000000",
+        "middleTextMaxSize": "medium",
+        "bottomText": "{calculated/reference} R",
+        "bottomTextColor": "#000000",
+        "bottomTextMaxSize": "medium",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "indQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "status",
+              "operator": "STRING_OPERATOR_IS",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "UNIQUE",
+                "inputEditor": "SIMPLE_SELECT",
+                "value": [
+                  {
+                    "value": "No Flooding",
+                    "label": "No Flooding"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "status = 'No Flooding'",
+          "displaySQL": "(Current Status = 'No Flooding')"
+        },
+        "conditionalFormat": false,
+        "mainStatisticType": "count",
+        "refStatisticType": "count",
+        "refFixedValue": 172,
+        "middleTextBelow": "{calculated/value} V",
+        "middleTextColorBelow": "#bc00ff",
+        "refQuery": {
+          "logicalOperator": "AND",
+          "parts": [],
+          "sql": "",
+          "displaySQL": ""
+        },
+        "showLastUpdateTime": true,
+        "bottomTextBelow": "{calculated/reference} R",
+        "bottomTextColorBelow": "#df032e"
+      },
+      "id": "widget_33",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "stage_ft",
+            "flow_cfs"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d381c-layer-37",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "stage_ft"
+          ]
+        }
+      ]
+    },
+    "widget_34": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 3",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5\"></path><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Info",
+                "originalName": "outlined/suggested/info.svg",
+                "path": [
+                  "generalAndArrows",
+                  "info"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "linkParam": {
+            "linkType": "DIALOG",
+            "value": "dialog_2"
+          },
+          "toolTip": "About No Flooding",
+          "toolTipExpression": null
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0.16)",
+                "fillType": "fill"
+              }
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "type": "solid",
+                "color": "rgba(48,48,48,0)",
+                "width": "0px"
+              },
+              "borderRadius": {
+                "number": [
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_34",
+      "useDataSources": []
+    },
+    "widget_35": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 5",
+      "config": {
+        "text": "<p><span style=\"font-size: 20px;\">Low Flow</span></p><p><span style=\"font-size: 16px;\">This indicator shows a quick numerical representation of flood gauges that are currently at Low Flow.  </span></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_35"
+    },
+    "widget_36": {
+      "uri": "widgets/common/text/",
+      "version": "1.19.0",
+      "label": "Text 6",
+      "config": {
+        "text": "<p><span style=\"font-size: 20px;\">No Flooding</span></p><p><span style=\"font-size: 16px;\">This indicator shows a quick numerical representation of flood gauges that are currently at \"No Flooding\" which is a positive, normal operating status.</span></p>",
+        "style": {
+          "wrap": true
+        }
+      },
+      "id": "widget_36"
+    },
+    "widget_37": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 6",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "indValueField": null,
+        "refType": "Statistic",
+        "refValueType": "value",
+        "refValueField": null,
+        "topText": "Missouri Gauges",
+        "topTextColor": "#000000",
+        "topTextMaxSize": "xx-small",
+        "middleText": "{calculated/value} ",
+        "middleTextColor": "#000000",
+        "middleTextMaxSize": "large",
+        "bottomText": "{calculated/reference} Major",
+        "bottomTextColor": "#000000",
+        "bottomTextMaxSize": "xx-small",
+        "valueFormat": "Decimal",
+        "digitGrouping": false,
+        "minDecimalPlaces": 0,
+        "maxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "unitPrefix": false,
+        "indQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "Status",
+              "operator": "STRING_OPERATOR_IS",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "USER_INPUT",
+                "inputEditor": "SIMPLE_SELECT",
+                "value": [
+                  {
+                    "value": "No Flooding Observed",
+                    "label": "Low Flow or No Flooding"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "Status = 'No Flooding Observed'",
+          "displaySQL": "(Status = 'Low Flow or No Flooding')"
+        },
+        "refQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "Status",
+              "operator": "STRING_OPERATOR_IS",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "USER_INPUT",
+                "inputEditor": "SIMPLE_SELECT",
+                "value": [
+                  {
+                    "value": "Moderate Flood",
+                    "label": "Moderate Flood"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "Status = 'Moderate Flood'",
+          "displaySQL": "(Status = 'Moderate Flood')"
+        },
+        "refStatisticType": "count",
+        "mainStatisticType": "count",
+        "conditionalFormat": false
+      },
+      "id": "widget_37",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d3819-layer-35",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d3819-layer-35",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "OBJECTID"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d3819-layer-35",
+          "mainDataSourceId": "dataSource_1-198522c88f4-layer-64-196f86d3819-layer-35",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      ]
+    },
+    "widget_38": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 4",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" d=\"M8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6.5 7.5A.5.5 0 0 1 7 7h1.5v4.5h1a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1h1V8H7a.5.5 0 0 1-.5-.5\"></path><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16m0-1A7 7 0 1 0 8 1a7 7 0 0 0 0 14\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Info",
+                "originalName": "outlined/suggested/info.svg",
+                "path": [
+                  "generalAndArrows",
+                  "info"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0.16)",
+                "fillType": "fill"
+              }
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "type": "solid",
+                "color": "rgba(48,48,48,0)",
+                "width": "0px"
+              },
+              "borderRadius": {
+                "number": [
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_38",
+      "useDataSources": []
+    },
+    "widget_40": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 5",
+      "config": {
+        "functionConfig": {
+          "text": "",
+          "textExpression": null,
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"m11 0 5 5-5 5V7c-5 0-6 2.5-7 5.5C3 9 3 3 11 3zM2 4h2V2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4h-2v4H2z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Share",
+                "originalName": "filled/editor/share-arrow-curve.svg",
+                "path": [
+                  "generalAndArrows",
+                  "share"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0.16)",
+                "fillType": "fill"
+              }
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              },
+              "border": {
+                "type": "solid",
+                "color": "rgba(48,48,48,0)",
+                "width": "0px"
+              },
+              "borderRadius": {
+                "number": [
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_40",
+      "useDataSources": []
+    },
+    "widget_41": {
+      "uri": "widgets/indicator/",
+      "version": "1.19.0",
+      "label": "Indicator 7",
+      "config": {
+        "indType": "Statistic",
+        "indValueType": "value",
+        "refType": "Statistic",
+        "mainStatisticType": "sum",
+        "conditionalFormat": false,
+        "topText": "Total Responders",
+        "topTextColor": "#ffffff",
+        "topTextMaxSize": "small",
+        "middleText": "{calculated/value}",
+        "middleTextColor": "#ffffff",
+        "middleTextMaxSize": "large",
+        "bottomText": "{calculated/reference} Incidents",
+        "bottomTextColor": "#ffffff",
+        "bottomTextMaxSize": "medium",
+        "iconPosition": "left",
+        "digitGrouping": false,
+        "valueMinDecimalPlaces": 0,
+        "valueMaxDecimalPlaces": 1,
+        "valuePrefix": "",
+        "valueSuffix": "",
+        "valueUnitPrefix": false,
+        "refStatisticType": "count",
+        "refQuery": {
+          "logicalOperator": "AND",
+          "parts": [
+            {
+              "type": "SINGLE",
+              "jimuFieldName": "TotalIncidentPersonnel",
+              "operator": "NUMBER_OPERATOR_IS_AT_LEAST",
+              "valueOptions": {
+                "isValid": true,
+                "sourceType": "USER_INPUT",
+                "inputEditor": "TEXT_BOX",
+                "value": [
+                  {
+                    "value": 1,
+                    "label": "1"
+                  }
+                ]
+              },
+              "displayType": "NONE",
+              "askForValueOptions": null,
+              "displayLabel": null,
+              "caseSensitive": false
+            }
+          ],
+          "sql": "TotalIncidentPersonnel >= 1",
+          "displaySQL": "(Total Incident Personnel >= 1)"
+        }
+      },
+      "id": "widget_41",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "TotalIncidentPersonnel"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+          "rootDataSourceId": "dataSource_2",
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      ]
+    },
+    "widget_42": {
+      "uri": "widgets/common/button/",
+      "version": "1.19.0",
+      "label": "Button 6",
+      "config": {
+        "functionConfig": {
+          "icon": {
+            "data": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"#000\" fill-rule=\"evenodd\" d=\"M15.29 6.208 8 1 .71 6.208a.5.5 0 1 0 .58.813L2 6.515V15h12V6.514l.71.507a.5.5 0 0 0 .58-.813M13 5.8 8 2.229 3 5.8V14h3v-4h4v4h3zM9 14H7v-3h2z\" clip-rule=\"evenodd\"></path></svg>",
+              "properties": {
+                "filename": "Home",
+                "originalName": "outlined/application/home.svg",
+                "path": [
+                  "generalAndArrows",
+                  "home"
+                ],
+                "inlineSvg": true,
+                "isUploaded": false,
+                "color": "var(--ref-palette-neutral-1100)"
+              }
+            },
+            "position": "LEFT"
+          },
+          "text": "",
+          "textExpression": null,
+          "toolTip": "Return Home",
+          "toolTipExpression": null,
+          "linkParam": {
+            "linkType": "WEB_ADDRESS",
+            "openType": "_self",
+            "value": "https://exb.luciuscreamer.com/",
+            "expression": null
+          }
+        },
+        "styleConfig": {
+          "themeStyle": {
+            "quickStyleType": "default"
+          },
+          "useCustom": true,
+          "customStyle": {
+            "hover": {
+              "enableDynamicStyle": false
+            },
+            "regular": {
+              "enableDynamicStyle": false,
+              "background": {
+                "color": "rgba(48,48,48,0)",
+                "fillType": "fill"
+              }
+            }
+          }
+        }
+      },
+      "id": "widget_42",
+      "useDataSources": []
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {
+    "dialog_1": {
+      "id": "dialog_1",
+      "mode": "ANCHORED",
+      "blockPage": true,
+      "sizeMode": {
+        "LARGE": {
+          "width": "300px",
+          "height": "150px"
+        }
+      },
+      "interactionType": null,
+      "interactionStyles": null,
+      "confirmBeforeClose": true,
+      "alwaysShowConfirmation": false,
+      "dialogBackground": {
+        "color": "var(--sys-color-surface-overlay)",
+        "fillType": "fill",
+        "image": {
+          "url": ""
+        }
+      },
+      "overlayColor": null,
+      "layout": {
+        "LARGE": "layout_25"
+      },
+      "index": 0,
+      "isSplash": false,
+      "border": {
+        "color": "var(--sys-color-divider-secondary)",
+        "type": "solid",
+        "width": "2px"
+      },
+      "label": "About Low Flow",
+      "closeWhenClickOverlay": true,
+      "boxShadow": {
+        "offsetX": "0",
+        "offsetY": "0",
+        "blur": "20px",
+        "spread": "2px",
+        "color": "rgba(0,0,0,0.2)"
+      },
+      "borderRadius": {
+        "number": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "px"
+      }
+    },
+    "dialog_2": {
+      "id": "dialog_2",
+      "mode": "ANCHORED",
+      "blockPage": true,
+      "sizeMode": {
+        "LARGE": {
+          "width": "300px",
+          "height": "150px"
+        }
+      },
+      "interactionType": null,
+      "interactionStyles": null,
+      "confirmBeforeClose": true,
+      "alwaysShowConfirmation": false,
+      "dialogBackground": {
+        "color": "var(--sys-color-surface-overlay)",
+        "fillType": "fill",
+        "image": {
+          "url": ""
+        }
+      },
+      "overlayColor": null,
+      "layout": {
+        "LARGE": "layout_26"
+      },
+      "index": 1,
+      "isSplash": false,
+      "border": {
+        "color": "var(--sys-color-divider-secondary)",
+        "type": "solid",
+        "width": "2px"
+      },
+      "label": "About No Flooding",
+      "closeWhenClickOverlay": true,
+      "boxShadow": {
+        "offsetX": "0",
+        "offsetY": "0",
+        "blur": "20px",
+        "spread": "2px",
+        "color": "rgba(0,0,0,0.2)"
+      },
+      "borderRadius": {
+        "number": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit": "px"
+      }
+    }
+  },
+  "messageConfigs": {
+    "messageConfig_1": {
+      "id": "messageConfig_1",
+      "widgetId": "widget_2",
+      "messageType": "EXTENT_CHANGE",
+      "actions": [
+        {
+          "actionId": "filter-data-record-action-1774587671981",
+          "sectionId": null,
+          "messageWidgetId": "widget_2",
+          "actionName": "filter data record action",
+          "description": null,
+          "config": [
+            {
+              "messageUseDataSource": null,
+              "actionUseDataSource": {
+                "dataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+                "mainDataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+                "rootDataSourceId": "dataSource_2"
+              },
+              "sqlExprObj": null,
+              "enableQueryWithCurrentExtent": true,
+              "enabledDataRelationShip": true
+            },
+            {
+              "messageUseDataSource": null,
+              "actionUseDataSource": {
+                "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+                "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+                "rootDataSourceId": "dataSource_2"
+              },
+              "sqlExprObj": null,
+              "enableQueryWithCurrentExtent": true,
+              "enabledDataRelationShip": true
+            }
+          ],
+          "version": "1.19.0",
+          "useDataSources": [
+            {
+              "dataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+              "mainDataSourceId": "dataSource_2-19d2d9e982d-layer-5-19d2d9e99af-layer-7",
+              "rootDataSourceId": "dataSource_2",
+              "fields": []
+            },
+            {
+              "dataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+              "mainDataSourceId": "dataSource_2-19d2d9e818d-layer-2-19d2d9e82e1-layer-4",
+              "rootDataSourceId": "dataSource_2",
+              "fields": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "portalUrl": "https://SunshineGIS.maps.arcgis.com",
+    "enableA11yForWidgetSettings": true,
+    "favicon": {
+      "svg": "${appResourceUrl}/images/icon_picker_in_setting/1774674680658.png",
+      "properties": {
+        "filename": "1774674680658.png",
+        "originalName": "favicon-96x96.png",
+        "path": "${appResourceUrl}/images/icon_picker_in_setting/1774674680658.png",
+        "inlineSvg": false,
+        "isUploaded": true,
+        "color": "var(--ref-palette-neutral-1100)"
+      }
+    }
+  },
+  "timestamp": 1774674685515,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#303030",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#212121",
+      "color": "#ffffff",
+      "link": "#c84ce6"
+    },
+    "button": {
+      "bg": "#2c2c2c",
+      "color": "#ffffff"
+    },
+    "logo": {
+      "small": "https://sunshinegis.maps.arcgis.com/sharing/rest/content/items/cb3555507eec46229eb8760b1f931e62/data",
+      "link": "https://luciuscreamer.com"
+    }
+  },
+  "mainLocale": "en",
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "MoHIC Flood Web App Map (Copy)",
+      "itemId": "7d6edd1b685c42f0adf98ccfdb887591",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Fire Map (Indicator Example)",
+      "itemId": "e086fe8b30b241e19d86ce97a9fd1591",
+      "portalUrl": "https://SunshineGIS.maps.arcgis.com"
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    },
+    {
+      "page_2": []
+    }
+  ],
+  "header": {
+    "layout": {
+      "LARGE": "layout_5",
+      "SMALL": "layout_7"
+    },
+    "height": {
+      "LARGE": "60px"
+    }
+  },
+  "customThemeOptions": {
+    "sys": {
+      "shape": {
+        "shape1": "7px",
+        "shape2": "13px",
+        "inputField": "50px"
+      }
+    },
+    "comp": {
+      "Button": {
+        "root": {
+          "vars": {
+            "shape": "50px"
+          }
+        }
+      }
+    }
+  },
+  "useAutoSortInFixedLayout": true,
+  "customTheme": {},
+  "publishTimestamp": 1774674687080
+}

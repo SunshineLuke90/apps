@@ -76,5 +76,18 @@
     "fileFormat": "image/png",
     "originalWidth": 1044,
     "originalHeight": 820
+  },
+  "1774674754010": {
+    "originalName": "indicatorExample.png",
+    "fileName": "1774674754010.png",
+    "size": 2281230,
+    "url": "${appResourceUrl}/images/widget_107/1774674754010.png",
+    "created": 1774674754010,
+    "resourcesPrefix": "images/widget_107",
+    "referredIds": [],
+    "originId": "1774674754010",
+    "fileFormat": "image/png",
+    "originalWidth": 2876,
+    "originalHeight": 1376
   }
 }
